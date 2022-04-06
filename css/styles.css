@@ -1,4 +1,4 @@
-/* globales */
+/* globales (header, footer, fonts, etc) */
 body {
     background-color: black;
     color: white;
@@ -15,6 +15,7 @@ header {
     align-items: center;
     justify-content: space-around;
     height: 120px;
+    box-sizing: border-box;
 }
 .links {
     display: flex;
@@ -29,7 +30,33 @@ nav {
 .logo img {
     width: 100%;
 }
+.search {
+    width: 15%;
+}
+.search input {
+    width:100%;
+}
+.icon {
+    width: 2%;
+}
+    /* footer */
+footer {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+footer p {
+    text-align: center;
+}
 /* index */
+
+.lists {
+    display:flex;
+    justify-content: space-around;
+}
+.list-1, .list-2, .list-3 {
+}
 
 /* detail-track */
 
