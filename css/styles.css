@@ -1,3 +1,11 @@
+/* globales */
+body {
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
 /* index */
 
 /* detail-track */
