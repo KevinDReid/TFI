@@ -1,10 +1,33 @@
 /* globales */
 body {
     background-color: black;
+    color: white;
 }
 a {
     text-decoration: none;
     color:white;
+}
+ul {
+    list-style: none;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+nav {
+    width: 100%;
+}
+.logo {
+    width:220px;
+}
+.logo img {
+    width: 100%;
 }
 /* index */
 
