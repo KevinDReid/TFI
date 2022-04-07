@@ -55,9 +55,9 @@ footer p {
     display:flex;
     justify-content: space-around;
 }
-.list-1, .list-2, .list-3 {
+.list-1 h2, .list-2 h2, .list-3 h2 {
+    text-align: center;
 }
-
 /* detail-track */
 
 /* detail-artist */
