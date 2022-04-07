@@ -1,71 +1,114 @@
 /* globales (header, footer, fonts, etc) */
+* {
+  font-family: 'Roboto', sans-serif;;
+}
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 a {
-    text-decoration: none;
-    color:white;
+  text-decoration: none;
+  color: white;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 120px;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 120px;
+  box-sizing: border-box;
 }
 .links {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 nav {
-    width: 100%;
+  width: 100%;
 }
 .logo {
-    width:220px;
+  width: 220px;
 }
 .logo img {
-    width: 100%;
+  width: 100%;
 }
 .search {
-    width: 15%;
+  width: 15%;
 }
 .search input {
-    width:100%;
-    padding: 3px;
-    border-radius: 10px;
+  width: 100%;
+  padding: 3px;
+  border-radius: 10px;
 }
 .icon {
-    width: 2%;
+  width: 2%;
 }
-    /* footer */
+main {
+}
+/* footer */
 footer {
-    border-top: 1px solid gray;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  border-top: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
 footer p {
-    text-align: center;
+  text-align: center;
 }
+
 /* index */
+
 .banner {
-    background-color: red;
+  background-color: red;
+  height: 100px;
 }
-
-h1 {
-    text-align: center;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-
+h1,
+h2 {
+  text-align: center;
+}
+article {
+  width: 50%;
+}
 .lists {
-    display:flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-.list-1 h2, .list-2 h2, .list-3 h2 {
-    text-align: center;
+.list-1 h2,
+.list-2 h2,
+.list-3 h2 {
+  text-align: center;
+}
+.list-1,
+.list-2,
+.list-3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 100%;
+}
+.sub-list-1,
+.sub-list-2,
+.sub-list-3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 50%;
+}
+.sub-list-1 img,
+.sub-list-2 img,
+.sub-list-3 img {
+  border-radius: 20%;
+  height: 100px;
 }
 /* detail-track */
 
