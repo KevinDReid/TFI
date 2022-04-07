@@ -35,6 +35,8 @@ nav {
 }
 .search input {
     width:100%;
+    padding: 3px;
+    border-radius: 10px;
 }
 .icon {
     width: 2%;
