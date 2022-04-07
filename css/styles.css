@@ -52,6 +52,13 @@ footer p {
     text-align: center;
 }
 /* index */
+.banner {
+    background-color: red;
+}
+
+h1 {
+    text-align: center;
+}
 
 .lists {
     display:flex;
