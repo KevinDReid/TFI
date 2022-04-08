@@ -136,6 +136,8 @@ h1 {
 .h2-list {
   margin-left: 5%;
   margin-right: 5%;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 section {
@@ -183,10 +185,6 @@ section {
   height: 100px;
 }
 
-h2 {
-  border: 1px solid;
-  border-radius: 10px;
-}
 
 /* detail-track */
 
