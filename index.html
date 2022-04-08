@@ -1,252 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <title>Home</title>
-</head>
+  <body>
+    <header>
+      <article class="logo">
+        <a href="index.html"><img src="./img/Vibes.gif" alt="logo" /></a>
+      </article>
 
-<body>
-  <header>
-    <section class="logo">
-      <a href="index.html"><img src="./img/Vibes.gif" alt="logo" /></a>
-    </section>
+      <nav>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="genres.html">Géneros</a></li>
+          <li><a href="playlist.html">Favoritos</a></li>
+          <!-- no sé si esto va -->
+          <li><a href="detail-artist.html">Artistas</a></li>
+          <li><a href="">Playlist</a></li>
+        </ul>
+      </nav>
 
-    <nav>
-      <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="genres.html">Géneros</a></li>
-        <li><a href="playlist.html">Favoritos</a></li>
-        <!-- no sé si esto va -->
-        <li><a href="detail-artist.html">Artistas</a></li>
-      </ul>
-    </nav>
+      <article class="icon">
+        <span class="icon"><i class="fa fa-search"></i></span>
+      </article>
 
-    <section class="icon">
-      <span class="icon"><i class="fa fa-search"></i></span>
-    </section>
+      <article class="search">
+        <form action="search-results.html">
+         <input type="search" id="search" placeholder="Search..." />
+        </form>
+      </article>
+    </header>
 
-    <section class="search">
-      <form action="search-results.html">
-        <input type="search" id="search" placeholder="Search..." />
-      </form>
-    </section>
-  </header>
+    <main>
+      <article class="h1-banner">
+        <h1>Vibes</h1>
+      </article>
+      <article class="banner">
+        <div class="back-banner"></div>
+      </article>
 
-  <main>
-    <section class="banner">
-      <h1>
-        Vibes
-      </h1>
+      <article class="lists">
+        <section>
+          <h2 class="h2-list">Artistas</h2>
+          <ul class="list-1">
+            <li class="sub-list-1">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del artista</h3>
+              </div>
+            </li>
+
+            <li class="sub-list-1">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del artista</h3>
+              </div>
+            </li>
+
+            <li class="sub-list-1">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del artista</h3>
+              </div>
+            </li>
+
+            <li class="sub-list-1">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del artista</h3>
+              </div>
+            </li>
+
+            <li class="sub-list-1">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del artista</h3>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="h2-list">Discos</h2>
+          <ul class="list-2">
+            <li class="sub-list-2">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del disco</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+
+            <li class="sub-list-2">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del disco</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+
+            <li class="sub-list-2">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del disco</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+
+            <li class="sub-list-2">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del disco</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+
+            <li class="sub-list-2">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre del disco</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="h2-list">Canciones</h2>
+          <ul class="list-3">
+            <li class="sub-list-3">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre de la canción</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+
+            <li class="sub-list-3">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre de la canción</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+
+            <li class="sub-list-3">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre de la canción</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+
+            <li class="sub-list-3">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre de la canción</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+
+            <li class="sub-list-3">
+              <img src="./img/imagen-test.jpg" alt="test" />
+              <div>
+                <h3>Nombre de la canción</h3>
+                <h4>Nombre del artista</h4>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer>
       <p>
-        acá va una imagen de fondo que pegue un poco con la onda de la página
+        Integrantes:
+        <br />
+        Kevin Douglas Reid, Manuel Zimmermann y Fausto Moché
       </p>
-    </section>
-
-    <section class="lists">
-      <article>
-        <h2>Artistas</h2>
-        <ul class="list-1">
-
-          <li class="sub-list-1">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del artista
-              </h3>
-            </div>
-          </li>
-
-          <li class="sub-list-1">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del artista
-              </h3>
-            </div>
-          </li>
-
-          <li class="sub-list-1">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del artista
-              </h3>
-            </div>
-          </li>
-
-          <li class="sub-list-1">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del artista
-              </h3>
-            </div>
-          </li>
-
-          <li class="sub-list-1">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del artista
-              </h3>
-            </div>
-          </li>
-
-        </ul>
-      </article>
-
-      <article>
-        <h2>Discos</h2>
-        <ul class="list-2">
-          <li class="sub-list-2">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del disco
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-
-          <li class="sub-list-2">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del disco
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-
-          <li class="sub-list-2">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del disco
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-
-          <li class="sub-list-2">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del disco
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-
-          <li class="sub-list-2">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre del disco
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-
-        </ul>
-      </article>
-
-      <article>
-        <h2>Canciones</h2>
-        <ul class="list-3">
-          <li class="sub-list-3">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre de la canción
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-
-          <li class="sub-list-3">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre de la canción
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-
-          <li class="sub-list-3">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre de la canción
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-
-          <li class="sub-list-3">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre de la canción
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-          
-          <li class="sub-list-3">
-            <img src="./img/imagen-test.jpg" alt="test">
-            <div>
-              <h3>
-                Nombre de la canción
-              </h3>
-              <h4>
-                Nombre del artista
-              </h4>
-            </div>
-          </li>
-          
-        </ul>
-      </article>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>
-      Integrantes:
-      <br />
-      Kevin Douglas Reid, Manuel Zimmermann y Fausto Moché
-    </p>
-  </footer>
-  
-</body>
-
+    </footer>
+  </body>
 </html>
