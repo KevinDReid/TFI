@@ -35,8 +35,6 @@ header {
 }
 
 .links li:hover {
-  transition: all .3s ease-out;
-  transition: none;
   display: flex;
   justify-content: space-around;
   background-color: yellow;
@@ -140,7 +138,7 @@ h1 {
   border-radius: 10px;
 }
 
-section {
+.lists section {
   width: 50%;
 }
 
