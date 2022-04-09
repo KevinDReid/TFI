@@ -197,9 +197,23 @@ h1 {
 /* detail-genres */
 .article{
   height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+.fondo1{
+margin-bottom: 10px;
+
 }
 .nombre{
   background-color:#F8F8FF;
+  height: 150px;
+  display: block;
+}
+.david{
+font-size: 15px;
+color: black;
 }
 
+.cancion{
+ color: black;
+}
 /* search-results */
