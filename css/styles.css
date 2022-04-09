@@ -1,18 +1,22 @@
 /* globales (header, footer, fonts, etc) */
 * {
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif;
 }
+
 body {
   background-color: black;
   color: white;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
 ul {
   list-style: none;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -20,72 +24,142 @@ header {
   height: 120px;
   box-sizing: border-box;
 }
+
 .links {
   display: flex;
   justify-content: space-around;
 }
+
+.links li {
+  padding: 5px;
+}
+
+.links li:hover {
+  transition: all .3s ease-out;
+  transition: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 2px;
+
+}
+
 nav {
   width: 100%;
 }
+
 .logo {
   width: 220px;
 }
+
 .logo img {
   width: 100%;
 }
+
 .search {
   width: 15%;
 }
+
 .search input {
   width: 100%;
   padding: 3px;
   border-radius: 10px;
 }
+
 .icon {
   width: 2%;
 }
-main {
-}
+
+main {}
+
 /* footer */
 footer {
   border-top: 1px solid gray;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin-top: 100px;
+  animation: slide 5s infinite alternate;
+  block-size: max-content;
 }
 footer p {
   text-align: center;
+}
+@keyframes slide {
+  from {margin-right: 100%;}
+  to {margin-right: 0%;}
 }
 
 /* index */
 
 .banner {
-  background-color: red;
-  height: 100px;
+  height: 300px;
+  margin-top: 2%;
+  background-image: url(/imagenesbanner/1.png);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  z-index: 1;
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+
+.back-banner {
+
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
-h1,
-h2 {
+
+.h1-banner {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.h1-banner h1 {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
   text-align: center;
 }
-article {
+
+.h1-banner h1,
+.h2-list {
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.h2-list {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section {
   width: 50%;
 }
+
 .lists {
   display: flex;
   justify-content: space-around;
   margin-left: 5%;
   margin-right: 5%;
 }
+
 .list-1 h2,
 .list-2 h2,
 .list-3 h2 {
   text-align: center;
 }
+
 .list-1,
 .list-2,
 .list-3 {
@@ -95,6 +169,7 @@ article {
   justify-content: space-between;
   height: 100%;
 }
+
 .sub-list-1,
 .sub-list-2,
 .sub-list-3 {
@@ -102,18 +177,22 @@ article {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
   height: 50%;
 }
+
 .sub-list-1 img,
 .sub-list-2 img,
 .sub-list-3 img {
   border-radius: 20%;
   height: 100px;
 }
+
 h2 {
   border: 1px solid;
   border-radius: 10px;
 }
+
 /* detail-track */
 
 /* detail-artist */
@@ -122,25 +201,63 @@ h2 {
 
 /* playlist */
 .plimg {
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 200px;
 }
-@keyframes crazycrazy {
-  100% {
-    flex-shrink: 5;
+@keyframes animatepls {
+   from {top: 0px;}
+ to {top: 100px;}
 }
 .playlist {
   display: flex;
   flex-direction: row;
   align-items: center;
-  animation: crazycrazy
+  animation: animatepls 1s infinite;
 }
-.aaa {
+.yourpl {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.plinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  color: rgb(182, 182, 182);
+}
+.songspl {
+  width: 100px;
+  height: 100px;
+}
+.plsongs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: rgb(182, 182, 182);
+}
+.weight {
+  font-weight: 400;
+}
+.startli {
+  display: flex;
+  justify-self: flex-start;
+  flex-wrap: wrap;
+}
+.plsonginfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.songartist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
 /* genres */
 
@@ -152,3 +269,4 @@ h2 {
 .white {
   color: white;
 }
+/* search-results */
