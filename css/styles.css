@@ -195,25 +195,13 @@ h1 {
 /* genres */
 
 /* detail-genres */
-.article{
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
-}
-.fondo1{
-margin-bottom: 10px;
-
-}
 .nombre{
-  background-color:#F8F8FF;
-  height: 150px;
-  display: block;
+
 }
-.david{
-font-size: 15px;
-color: black;
+.davidlogo{
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.cancion{
- color: black;
-}
 /* search-results */
