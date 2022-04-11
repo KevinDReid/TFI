@@ -13,12 +13,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
 <title>Géneros</title>
 </head>
 
 <body>
   <header>
-    <sectiongit  class="logo">
+    <section  class="logo">
       <a href="index.html"><img src="./img/Vibes.gif" alt="logo" /></a>
     </section>
 
@@ -27,13 +30,16 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="genres.html">Géneros</a></li>
         <li><a href="playlist.html">Favoritos</a></li>
-        <!-- no sé si esto va -->
         <li><a href="detail-artist.html">Artistas</a></li>
+        <li><a href="detail-album.html">Discos</a></li>
+        <li><a href="detail-track.html">Canciones</a></li>
+        <li><a href="detail-genres.html">Detalles del género</a></li>
       </ul>
     </nav>
-    <section class="icon">
-      <span class="icon"><i class="fa fa-search"></i></span>
-    </section>
+
+    <article class="icon">
+      <span class="icon"><a href="search-results.html"><i class="fa fa-search"></i></a></span>
+    </article>
 
     <section class="search">
       <form action="search-results.html">
@@ -43,33 +49,43 @@
   </header>
 
 <article class="article">
+  <div class="divimportante">
      <div class="nombre"> 
-        <h4 class="david fondo1"> David Guetta / Permanence </h4>
-        <h2 class="cancion fondo1"> Permanence</h3>
+       <img class="davidlogo" src="./img/imagenescancion/david guetta logo.png" alt="davidguetta">
      </div>
 
+      <div class="davidcanciongu">
+        <h4 class="david"> David Guetta / Permanence </h4>
+        <h2 class="cancion"> Permanence</h3>
+     </div>
+ </div>
      <div class="permanence">
         <img height="640" width="640" src="./img/imagenescancion/logo cancion.jpeg" alt="Logo cancion">
       </div>
-      <div class="texto">
-        <h3 class="subtitulo"> Lista de canciones</h3>
-        <span> 1. </span><span> Permanence</span>
-        <span class="tiempo"> 3:51</span>
-        <span class="triangulo"><i class="fa-solid fa-caret-right"></i></span>
-        <h3 class="subtitulo"> Acerca del album</h3>
-        <div class="div1"> 
-           <span class="span1">Artistas: </span><span class="desc"> David Guetta, Morten</span>
-        </div>
-        <div class="div2">
-          <span class="span1"> Fecha de lanzamiento: </span> <span class="desc"> 01-07-2022</span>
-        </div>
-        <div class="div3">
-          <span class="span1"> Genero:  </span><span class="desc"> Electronica</span>
-        </div>
-        <div class="div4">
-          <span class="span1"> Personas:</span><span class="desc"> David Guetta, MORTEN</span>
-        </div>
-      
+ 
+
+      <aside> 
+          <div class="texto">
+            <h3 class="subtitulo"> Lista de canciones</h3>
+            <span> 1. </span><span> Permanence</span>
+            <span class="tiempo"> 3:51</span>
+            <span class="triangulo"><i class="fa-solid fa-caret-right"></i></span>
+            <audio src="https://embed.music.apple.com/ar/album/permanence/1599768590?i=1599768594"></audio>
+         
+            <h3 class="subtitulo"> Acerca del album</h3>
+            <div class="div1"> 
+              <span class="span1">Artistas: </span><span class="desc"> David Guetta, Morten</span>
+            </div>
+            <div class="div2">
+              <span class="span1"> Fecha de lanzamiento: </span> <span class="desc"> 01-07-2022</span>
+            </div>
+            <div class="div3">
+              <span class="span1"> Genero:  </span><span class="desc"> Electronica</span>
+            </div>
+            <div class="div4">
+              <span class="span1"> Personas:</span><span class="desc"> David Guetta, MORTEN</span>
+            </div>
+      </aside>
 </article>
 
 

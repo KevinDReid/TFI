@@ -104,7 +104,6 @@ footer p {
 
 
 .back-banner {
-
   height: 300px;
   width: 100%;
   background-size: cover;
@@ -260,11 +259,17 @@ h1 {
 
 /* detail-genres */
 .article{
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
+width: 100%;
+font-family: 'Poppins', sans-serif;
 }
+<<<<<<< HEAD
 .fondo1{
 margin-bottom: 10px;
+=======
+.divimportante{
+  background-color: aliceblue; 
+ 
+>>>>>>> 44c3afc3870c4d83b9789adfed4ef305f5d2c89d
 }
 /* search-results */
 
@@ -272,16 +277,33 @@ margin-bottom: 10px;
 
 /* search-results */
 .nombre{
-  background-color:#F8F8FF;
-  height: 150px;
-  display: block;
-}
-.david{
-font-size: 15px;
-color: black;
+  
 }
 
-.cancion{
- color: black;
+
+.davidlogo{
+  width: 150px;
 }
+.davidcancion{
+  margin: 20px;
+}
+.david{
+  font-size: 20px;
+  color: black;
+ 
+height: 1px;
+}
+.cancion{
+font-size: 40px;
+color: black;
+
+}
+<<<<<<< HEAD
 /* search-results */
+=======
+
+
+
+
+/* search-results */
+>>>>>>> 44c3afc3870c4d83b9789adfed4ef305f5d2c89d
