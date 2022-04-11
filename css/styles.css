@@ -35,8 +35,6 @@ header {
 }
 
 .links li:hover {
-  transition: all .3s ease-out;
-  transition: none;
   display: flex;
   justify-content: space-around;
   background-color: yellow;
@@ -71,8 +69,6 @@ nav {
   width: 2%;
 }
 
-main {}
-
 /* footer */
 footer {
   border-top: 1px solid gray;
@@ -96,7 +92,7 @@ footer p {
 .banner {
   height: 300px;
   margin-top: 2%;
-  background-image: url(/imagenesbanner/1.png);
+  background-image: url(/img/imagenesbanner/1.png);
   height: 300px;
   width: 100%;
   background-size: cover;
@@ -105,6 +101,7 @@ footer p {
   filter: blur(2px);
   z-index: 1;
 }
+
 
 .back-banner {
 
@@ -141,9 +138,11 @@ h1 {
 .h2-list {
   margin-left: 5%;
   margin-right: 5%;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
-section {
+.lists section {
   width: 50%;
 }
 
@@ -188,10 +187,6 @@ section {
   height: 100px;
 }
 
-h2 {
-  border: 1px solid;
-  border-radius: 10px;
-}
 
 /* detail-track */
 
@@ -258,15 +253,35 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
 }
-
+.white {
+  color: white;
+}
 /* genres */
 
 /* detail-genres */
-
+.article{
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+.fondo1{
+margin-bottom: 10px;
+}
 /* search-results */
 
 /* colores */
-.white {
-  color: white;
+
+/* search-results */
+.nombre{
+  background-color:#F8F8FF;
+  height: 150px;
+  display: block;
+}
+.david{
+font-size: 15px;
+color: black;
+}
+
+.cancion{
+ color: black;
 }
 /* search-results */
