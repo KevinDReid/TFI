@@ -18,6 +18,7 @@ ul {
 }
 
 header {
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -84,8 +85,8 @@ nav {
   width: 2%;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
-  padding-top: 19px;
-  padding-bottom: 21px;
+  padding-top: 18px;
+  padding-bottom: 20px;
   background-color: rgba(51, 51, 51, 0.692);
 }
 
@@ -107,21 +108,16 @@ footer p {
   to {margin-right: 0%;}
 }
 
-/* index */
+/* banner */
 
 .banner {
   height: 300px;
   margin-top: 2%;
-  background-image: url(/img/imagenesbanner/1.png);
   height: 300px;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   filter: blur(2px);
   z-index: 1;
 }
-
 
 .back-banner {
   height: 300px;
@@ -129,7 +125,14 @@ footer p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
 
+/* index */
+.in-banner {
+  background-image: url(/img/imagenesbanner/1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .h1-banner {
@@ -157,7 +160,9 @@ h1 {
 .h2-list {
   margin-left: 5%;
   margin-right: 5%;
-  border: 1px solid;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+  background-color: rgba(51, 51, 51, 0.692);
   border-radius: 10px;
 }
 
@@ -277,11 +282,23 @@ h1 {
 }
 /* genres */
 
+.gen-banner {
+  background-image: url(/img/imagenesbanner/5.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* detail-genres */
 .article{
 width: 100%;
 font-family: 'Poppins', sans-serif;
 }
+.fondo1{
+margin-bottom: 10px;
+}
+.divimportante{
+  background-color: aliceblue; 
 .divimportante{
   background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
   background-repeat: no-repeat;
@@ -308,6 +325,8 @@ david cancion{
 /* Album-detail */
 
 
+}
+/* search-results */
 /* search-results */
 
 
