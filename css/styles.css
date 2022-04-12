@@ -283,7 +283,7 @@ h1 {
 /* genres */
 
 .gen-banner {
-  background-image: url(/img/imagenesbanner/5.png);
+  background-image: url(../img/imagenesbanner/5.png);
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
