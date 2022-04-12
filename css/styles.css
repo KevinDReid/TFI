@@ -294,14 +294,31 @@ margin-bottom: 10px;
   background-repeat: no-repeat;
   background-size: 500px;
   background-position:center ;
- 
-
+}
+.texto1{
+  margin-right: 8%;
 }
 .david{
   display: flex;
   justify-content: flex-end;
   
 }
+.cancion{
+  display: flex;
+  justify-content: flex-end;
+}
+.aside{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 80px
+  
+}
+
+.span1{
+  font-size: 20px;
+}
+
 
 
 /* search-results */
@@ -313,12 +330,10 @@ margin-bottom: 10px;
 
 /* Album-detail */
 
-
-}
-/* search-results */
 /* search-results */
 
 
 
 
-/* search-results */
+
+
