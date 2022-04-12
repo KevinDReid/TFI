@@ -303,6 +303,7 @@ margin-bottom: 10px;
 .david{
   display: flex;
   justify-content: flex-end;
+  font-size: 10px;
   
 }
 .cancion{
@@ -313,12 +314,17 @@ margin-bottom: 10px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-left: 80px
+  margin-left: 70px
   
 }
-
+.divaside{
+  background-image: url(/proyectointegrador/TFI/img/imagenesbanner/3.png);
+  margin-left: 80px;
+  
+}
 .span1{
   font-size: 20px;
+  font-weight: bold;
 }
 
 
