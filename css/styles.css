@@ -129,7 +129,7 @@ footer p {
 
 /* index */
 .in-banner {
-  background-image: url(/img/imagenesbanner/1.png);
+  background-image: url(../img/imagenesbanner/1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -297,8 +297,7 @@ font-family: 'Poppins', sans-serif;
 .fondo1{
 margin-bottom: 10px;
 }
-.divimportante{
-  background-color: aliceblue; 
+
 .divimportante{
   background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
   background-repeat: no-repeat;
@@ -307,7 +306,7 @@ margin-bottom: 10px;
  
 
 }
-david cancion{
+.david{
   display: flex;
   justify-content: flex-end;
   
