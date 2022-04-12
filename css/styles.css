@@ -300,32 +300,36 @@ margin-bottom: 10px;
 }
 .divimportante{
   background-color: aliceblue; 
+.divimportante{
+  background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
+  background-repeat: no-repeat;
+background-size: 500px;
+  background-position:center ;
+
 }
+.david{
+  display: flex;
+  justify-content: flex-end;
+  
+  
+}
+
+
 /* search-results */
 
 /* colores */
 
 /* search-results */
-.nombre{
-  
-}
 
 
-.davidlogo{
-  width: 150px;
-}
-.davidcancion{
-  margin: 20px;
-}
-.david{
-  font-size: 20px;
-  color: black;
- 
-height: 1px;
-}
-.cancion{
-font-size: 40px;
-color: black;
+/* Album-detail */
+
 
 }
+/* search-results */
+/* search-results */
+
+
+
+
 /* search-results */
