@@ -1,7 +1,6 @@
 /* globales (header, footer, fonts, etc) */
 * {
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
 }
 
 body {
