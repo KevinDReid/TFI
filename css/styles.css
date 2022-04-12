@@ -119,14 +119,6 @@ footer p {
   z-index: 1;
 }
 
-.back-banner {
-  height: 300px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 /* index */
 .in-banner {
   background-image: url(../img/imagenesbanner/1.png);
@@ -284,7 +276,7 @@ h1 {
 
 .gen-banner {
   background-image: url(../img/imagenesbanner/5.png);
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
