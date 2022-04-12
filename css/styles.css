@@ -1,6 +1,6 @@
 /* globales (header, footer, fonts, etc) */
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -285,11 +285,12 @@ font-family: 'Poppins', sans-serif;
 .divimportante{
   background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
   background-repeat: no-repeat;
-background-size: 500px;
+ background-size: 500px;
   background-position:center ;
+ 
 
 }
-.david{
+david cancion{
   display: flex;
   justify-content: flex-end;
   
