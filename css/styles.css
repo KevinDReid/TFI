@@ -284,7 +284,6 @@ h1 {
 /* detail-genres */
 .article{
 width: 100%;
-font-family: 'Poppins', sans-serif;
 }
 .fondo1{
 margin-bottom: 10px;
@@ -293,7 +292,7 @@ margin-bottom: 10px;
 .divimportante{
   background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
   background-repeat: no-repeat;
- background-size: 500px;
+  background-size: 500px;
   background-position:center ;
  
 
@@ -301,7 +300,6 @@ margin-bottom: 10px;
 .david{
   display: flex;
   justify-content: flex-end;
-  
   
 }
 
