@@ -284,7 +284,7 @@ h1 {
 }
 
 /* detail-genres */
-.article{
+.article .main{
 width: 100%;
 }
 .fondo1{
@@ -334,7 +334,8 @@ margin-bottom: 10px;
 
 
 
-/* search-results */
+/* detail-artist */
+
 
 /* colores */
 
