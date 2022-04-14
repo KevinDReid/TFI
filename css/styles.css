@@ -335,7 +335,32 @@ margin-bottom: 10px;
 
 
 /* detail-artist */
+.main{
+background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
+background-repeat: no-repeat;
+background-size: 500px;
+background-position: top;
+}
 
+.article2{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.lista{
+  margin-left: 9%;
+}
+.h3top{
+font-size: 40px;
+color: lightslategrey;
+}
+.ollista{
+  font-size: 30px;
+}
+.artistdiv{
+  margin-left: 80px;
+}
 
 /* colores */
 
