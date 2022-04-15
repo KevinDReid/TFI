@@ -377,7 +377,8 @@ background-position: top;
 background-size: 600px;
 }
 .album{
-display: flex;
+  display: flex;
+ margin-left: 80px;
 }
 .desc{
 font-size: 20px;
