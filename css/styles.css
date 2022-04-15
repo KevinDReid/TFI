@@ -284,7 +284,7 @@ h1 {
 }
 
 /* detail-genres */
-.article .main{
+.article .main .main1{
 width: 100%;
 }
 .fondo1{
@@ -324,7 +324,7 @@ margin-bottom: 10px;
   
 }
 .span1{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   color: lightslategray;
 }
@@ -338,7 +338,7 @@ margin-bottom: 10px;
 .main{
 background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
 background-repeat: no-repeat;
-background-size: 500px;
+background-size: 600px;
 background-position: top;
 }
 
@@ -361,13 +361,42 @@ color: lightslategrey;
 .artistdiv{
   margin-left: 80px;
 }
+.artista2{
+margin-left: 7%;
+color: lightslategray;
+font-size: 50px;
+}
+
+
+/* Album-detail */
+.main1{
+background-image: url(/TFI/img/imagenescancion/david\ guetta\ logo.png);
+background-repeat: no-repeat;
+background-position: center;
+background-position: top;
+background-size: 600px;
+}
+.album{
+display: flex;
+}
+.desc{
+font-size: 20px;
+}
+.divdisco{
+margin-left: 40px;
+}
+.listenalbum{
+ margin-left: 0%;
+}
+
 
 /* colores */
 
 /* search-results */
 
 
-/* Album-detail */
+
+
 
 /* search-results */
 
