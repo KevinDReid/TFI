@@ -279,7 +279,24 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.art-gen {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+}
+.gen-card {
+  width: 20%;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 1px red;
+}
+.gen-card:hover {
+  background-color: rgba(255, 0, 0, 0.568) ;
+}
+.gen-card h2 {
+  text-align: center;
+}
 /* detail-genres */
 .article .main .main1{
 width: 100%;
