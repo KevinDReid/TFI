@@ -97,8 +97,13 @@ footer {
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-top: 100px;
+  width: 100%;
+  height: 83px;
+  box-sizing: border-box;
+}
+.slide {
   animation: slide 5s infinite alternate;
-  block-size: max-content;
+  text-overflow: unset;
 }
 footer p {
   text-align: center;
