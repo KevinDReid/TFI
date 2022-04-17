@@ -97,6 +97,11 @@ footer {
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-top: 100px;
+  width: 100%;
+  height: 83px;
+  box-sizing: border-box;
+}
+.slide {
   animation: slide 5s infinite alternate;
   block-size: max-content;
   
@@ -132,6 +137,7 @@ footer p {
   position: absolute;
   text-align: center;
   width: 100%;
+  text-shadow: 0px 5px 10px rgba(255, 0, 0, 0.568);
 }
 
 .h1-banner h1 {
@@ -139,6 +145,7 @@ footer p {
   position: absolute;
   width: 100%;
   text-align: center;
+  /* text-shadow: 0px 5px 10px black; */
 }
 
 .h1-banner h1,
@@ -151,7 +158,7 @@ h1 {
 }
 
 .h2-list {
-  margin-left: 5%;
+  margin-left: 15%;
   margin-right: 5%;
   padding-bottom: 5px;
   border-bottom: 1px solid gray;
@@ -189,12 +196,14 @@ h1 {
 .sub-list-1,
 .sub-list-2,
 .sub-list-3 {
+  background-color: rgba(70, 69, 69, 0.377);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   height: 50%;
+  border-top: 1px solid gray;
 }
 
 .sub-list-1 img,
@@ -203,13 +212,6 @@ h1 {
   border-radius: 20%;
   height: 100px;
 }
-
-
-/* detail-track */
-
-/* detail-artist */
-
-/* detail-album */
 
 /* playlist */
 .plimg {
@@ -284,28 +286,126 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
 }
+.art-gen {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+}
+.gen-card-container {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 1px red;
+  height: 85%;
+}
+.gen-card {
+  width: 30%;
+}
+.gen-card-container:hover {
+  background-color: rgba(255, 0, 0, 0.568) ;
+}
+.gen-card h2 {
+  text-align: center;
+}
 
-/* detail-genres */
-.article{
-width: 100%;
-font-family: 'Poppins', sans-serif;
+/* detail-artist */
+.main{
+  background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\guetta\logo.png);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: top;
+}
+
+.article2{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.lista{
+  margin-left: 9%;
+}
+.h3top{
+  font-size: 40px;
+  color: lightslategrey;
+}
+.ollista{
+  font-size: 30px;
+}
+.artistdiv{
+  margin-left: 80px;
+}
+.artista2{
+  margin-left: 7%;
+  color: lightslategray;
+  font-size: 50px;
+}
+
+
+/* detail-album */
+.det-gen-banner {
+  background-image: url(../img/imagenesbanner/6.jpg);
+  background-size: cover;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
+}
+.main1{
+  background-image: url(/TFI/img/imagenescancion/david\guetta\logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+  background-size: 600px;
+}
+.album{
+  display: flex;
+  margin-left: 80px;
+}
+.desc{
+  font-size: 20px;
+}
+.divdisco{
+  margin-left: 40px;
+}
+.listenalbum{
+  margin-left: 50%;
+}
+
+
+/* detail-track */
+
+.article .main .main1{
+  width: 100%;
 }
 .fondo1{
 margin-bottom: 10px;
 }
-
+  
 .divimportante{
   background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
   background-repeat: no-repeat;
- background-size: 500px;
+  background-size: 500px;
   background-position:center ;
- 
-
+}
+.texto1{
+  margin-right: 8%;
+  font-size: 15px;
+  color: lightslategray;
 }
 .david{
   display: flex;
   justify-content: flex-end;
+  font-size: 8px;
   
+}
+.cancion{
+  display: flex;
+  justify-content: flex-end;
+}
+.aside{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 70px
   
 }
 
@@ -322,11 +422,38 @@ margin-bottom: 10px;
 /* Album-detail */
 
 
+
+
+/* detail-genres */
+.art-det-gen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* search-results */
-/* search-results */
-
-
-
+.det-gen-card-container {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 1px red;
+  height: 85%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.det-gen-card {
+  width: 80%;
+}
+.det-gen-card img {
+  width: 50%;
+  border-radius: 20px;
+}
+.det-gen-card-container div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.det-gen-card-container:hover {
+  background-color: rgba(255, 0, 0, 0.568) ;
+}
 
 /* search-results */
