@@ -376,19 +376,25 @@ h1 {
 }
 .album{
   display: flex;
+  justify-content: space-around;
   margin-left: 80px;
 }
 .desc{
   font-size: 20px;
 }
 .divdisco{
-  margin-left: 40px;
+  margin-left: 0px;
 }
 .listenalbum{
-  margin-left: 50%;
+  margin-left: 0%;
 }
-
-
+.datoscancion {
+  padding-left: 0px;
+  margin-bottom: 25%;
+}
+.listen {
+margin-left: 13%;
+}
 /* detail-track */
 
 .article .main .main1{
@@ -421,7 +427,7 @@ margin-bottom: 10px;
 }
 .aside{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 70px
   
