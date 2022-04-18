@@ -107,15 +107,11 @@ footer {
 }
 .slide {
   animation: slide 5s infinite alternate;
-  block-size: max-content;
-  
-}
-footer p {
   text-align: center;
 }
 @keyframes slide {
-  from {margin-right: 100%;}
-  to {margin-right: 0%;}
+  from {margin-right: 70%;}
+  to {margin-right: 5%;}
 }
 
 /* banner */
@@ -337,7 +333,7 @@ h1 {
 
 /* detail-artist */
 .main{
- background-image: url(/TFI/img/imagenescancion/david\ guetta\ logo.png);
+ background-image: url(../img/imagenescancion/david-guetta-logo.png);
  background-size: 600px;
  background-repeat: no-repeat;
  background-position: center;
@@ -371,14 +367,8 @@ h1 {
 
 
 /* detail-album */
-.det-gen-banner {
-  background-image: url(../img/imagenesbanner/6.jpg);
-  background-size: cover;
-  background-position-y: 80%;
-  background-repeat: no-repeat;
-}
 .main1{
-  background-image: url(/TFI/img/imagenescancion/david\ guetta\ logo.png);
+  background-image: url(../img/imagenescancion/david-guetta-logo.png);
   background-repeat: no-repeat;
   background-size: 600px;
   background-position: center;
@@ -386,14 +376,14 @@ h1 {
 }
 .album{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-left: 80px;
 }
 .desc{
   font-size: 25px;
 }
 .divdisco{
-  margin-left: 0px;
+  margin-left: 70px;
 }
 .listenalbum{
   margin-left: 0%;
@@ -405,6 +395,10 @@ h1 {
 .listen {
 margin-left: 13%;
 }
+.span1{
+  font-size: 30px;
+  color: lightslategray;
+}
 /* detail-track */
 
 .article .main .main1{
@@ -415,7 +409,7 @@ margin-bottom: 10px;
 }
   
 .divimportante{ 
-  background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
+  background-image: url(../img/imagenescancion/david-guetta-logo.png);
   background-repeat: no-repeat;
   background-size: 500px;
   background-position:center ;
@@ -437,12 +431,12 @@ margin-bottom: 10px;
 }
 .aside{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-left: 70px
 }
 .divaside{
-  margin-left: 90px;
+  margin-left: 70ipx;
 }
 .arc{
   color:red;
@@ -451,6 +445,17 @@ margin-bottom: 10px;
   margin-top: 15px;
   display: flex;
   justify-content: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+}
+.span2:hover{
+transition: 500ms;
+background-color: bisque;
+}
+.span2{
+  padding: 10px;
+  border-radius: 10px;
+  background-color:black;
 }
 
 /* detail-genres */
@@ -486,7 +491,8 @@ margin-bottom: 10px;
 /* search-results */
 
 /* responsive */
-
+  
+@media (max-width:420px) {
   /* index */
 
   /* genres */
@@ -500,6 +506,7 @@ margin-bottom: 10px;
   /* detail track */
 
   /* playlist  */
-  
+
   /* search results  */
 
+}
