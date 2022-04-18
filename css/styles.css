@@ -228,10 +228,6 @@ h1 {
 }
 
 /* playlist */
-.plimg {
-  width: 30%;
-  height: 200px;
-}
 @keyframes animatepls {
    from {top: 0px;}
  to {top: 100px;}
@@ -240,12 +236,21 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  animation: animatepls 1s infinite;
+}
+.plimg {
+  block-size: fit-content;
+  width: 25%;
+  height: 300px;
+  margin-left: 120px;
 }
 .yourpl {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 8%;
+}
+.h1pl {
+  margin: 0px;
 }
 .plinfo {
   display: flex;
@@ -255,7 +260,7 @@ h1 {
   border-bottom: 1px solid gray;
   color: rgb(182, 182, 182);
 }
-.songspl {
+.songsplimg {
   width: 100px;
   height: 100px;
 }
@@ -263,7 +268,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 15px;
   color: rgb(182, 182, 182);
 }
@@ -285,9 +290,10 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-left: 20px;
 }
 .plol {
-  list-style: decimal;
+  box-sizing: border-box;
 }
 .white {
   color: white;
