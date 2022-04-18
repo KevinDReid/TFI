@@ -321,10 +321,6 @@ h1 {
 }
 
 /* detail-artist */
-.main{
-
-}
-
 .article2{
   display: flex;
   justify-content: flex-start;
@@ -441,6 +437,11 @@ margin-bottom: 10px;
 }
 .arc{
   color:red;
+}
+.div4{
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
 }
 .div5{
   margin-top: 15px;
@@ -604,6 +605,10 @@ margin-bottom: 10px;
   }
   .permanence img {
     width: 100%;
+  }
+  .div2 {
+    display: flex;
+    flex-wrap: wrap;
   }
   /* playlist  */
 
