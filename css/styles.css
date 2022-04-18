@@ -255,7 +255,7 @@ h1 {
 .plinfo {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid gray;
   color: rgb(182, 182, 182);
@@ -293,7 +293,7 @@ h1 {
   margin-left: 20px;
 }
 .plol {
-  box-sizing: border-box;
+  padding-inline-start: 0px;
 }
 .white {
   color: white;
@@ -334,10 +334,11 @@ h1 {
 
 /* detail-artist */
 .main{
-  background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\guetta\logo.png);
-  background-repeat: no-repeat;
-  background-size: 600px;
-  background-position: top;
+ background-image: url(/TFI/img/imagenescancion/david\ guetta\ logo.png);
+ background-size: 600px;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-position: top;
 }
 
 .article2{
@@ -374,27 +375,33 @@ h1 {
   background-repeat: no-repeat;
 }
 .main1{
-  background-image: url(/TFI/img/imagenescancion/david\guetta\logo.png);
+  background-image: url(/TFI/img/imagenescancion/david\ guetta\ logo.png);
   background-repeat: no-repeat;
+  background-size: 600px;
   background-position: center;
   background-position: top;
-  background-size: 600px;
 }
 .album{
   display: flex;
+  justify-content: space-around;
   margin-left: 80px;
 }
 .desc{
-  font-size: 20px;
+  font-size: 25px;
 }
 .divdisco{
-  margin-left: 40px;
+  margin-left: 0px;
 }
 .listenalbum{
-  margin-left: 50%;
+  margin-left: 0%;
 }
-
-
+.datoscancion {
+  padding-left: 0px;
+  margin-bottom: 25%;
+}
+.listen {
+margin-left: 13%;
+}
 /* detail-track */
 
 .article .main .main1{
@@ -404,7 +411,7 @@ h1 {
 margin-bottom: 10px;
 }
   
-.divimportante{
+.divimportante{ 
   background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
   background-repeat: no-repeat;
   background-size: 500px;
@@ -427,10 +434,20 @@ margin-bottom: 10px;
 }
 .aside{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 70px
-  
+}
+.divaside{
+  margin-left: 90px;
+}
+.arc{
+  color:red;
+}
+.div5{
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* detail-genres */
@@ -464,3 +481,22 @@ margin-bottom: 10px;
 }
 
 /* search-results */
+
+/* responsive */
+
+  /* index */
+
+  /* genres */
+
+  /* detail genres */
+
+  /* detail artist */
+
+  /* detail album */
+
+  /* detail track */
+
+  /* playlist  */
+  
+  /* search results  */
+
