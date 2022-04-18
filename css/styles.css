@@ -255,8 +255,9 @@ h1 {
   align-items: center;
   border-bottom: 1px solid gray;
   color: rgb(182, 182, 182);
+  margin: 0 100px;
 }
-.albumpl {
+.albumtextpl {
   margin-left: 80px;
 }
 .songsplimg {
@@ -267,8 +268,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 15px;
+  margin:  15px 0px;
   color: rgb(182, 182, 182);
 }
 .weight {
@@ -283,10 +283,9 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 .plsonginfo h5 {
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 .songartist {
   display: flex;
@@ -294,6 +293,7 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   margin-left: 20px;
+  width: 150.58px;
 }
 .bot {
 margin-bottom: 0px;
@@ -301,9 +301,23 @@ margin-bottom: 0px;
 .top {
   margin-top: 0px;
 }
+.plsize1 {
+  width: 40%;
+}
+.plsize2 {
+  width: 30%;
+}
+.plsize3 {
+  width: 15%;
+}
+.plsize4 {
+  display: flex;
+  width: 15%;
+  justify-content: center;
+}
 .plol {
   padding-inline-start: 0px;
-  margin-left: -100px
+  margin: 0 100px;
 }
 .white {
   color: white;
