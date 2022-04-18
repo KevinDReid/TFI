@@ -90,6 +90,10 @@ nav {
   background-color: rgba(51, 51, 51, 0.692);
 }
 
+/* colores */
+.greenyellow {
+  color: greenyellow;
+}
 /* footer */
 footer {
   border-top: 1px solid gray;
@@ -422,21 +426,6 @@ margin-bottom: 10px;
   margin-left: 70px
   
 }
-
-
-/* search-results */
-
-/* colores */
-.greenyellow {
-  color: greenyellow;
-}
-/* search-results */
-
-
-/* Album-detail */
-
-
-
 
 /* detail-genres */
 .art-det-gen {
