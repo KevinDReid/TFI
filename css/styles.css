@@ -260,6 +260,9 @@ h1 {
   border-bottom: 1px solid gray;
   color: rgb(182, 182, 182);
 }
+.albumpl {
+  margin-left: 80px;
+}
 .songsplimg {
   width: 100px;
   height: 100px;
