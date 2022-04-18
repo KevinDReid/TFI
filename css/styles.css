@@ -358,7 +358,7 @@ margin-bottom: 0px;
 /* detail-artist */
 .article2{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 80px;
 }
@@ -381,7 +381,7 @@ margin-bottom: 0px;
 }
 .all-artist{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
 .artista {
   width: 60%;
@@ -390,6 +390,7 @@ margin-bottom: 0px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  align-self: center;
 }
 .artista2{
   margin-left: 7%;
