@@ -110,8 +110,8 @@ footer {
   text-align: center;
 }
 @keyframes slide {
-  from {margin-right: 70%;}
-  to {margin-right: 5%;}
+  from {margin-right: 75.8%;}
+  to {margin-right: 0%;}
 }
 
 /* banner */
@@ -222,10 +222,6 @@ h1 {
 }
 
 /* playlist */
-@keyframes animatepls {
-   from {top: 0px;}
- to {top: 100px;}
-}
 .playlist {
   display: flex;
   flex-direction: row;
@@ -271,11 +267,6 @@ h1 {
 }
 .weight {
   font-weight: 400;
-}
-.startli {
-  display: flex;
-  justify-self: flex-start;
-  flex-wrap: wrap;
 }
 .plsonginfo {
   display: flex;
@@ -524,6 +515,31 @@ margin-bottom: 10px;
 }
 
 /* search-results */
+.srborder {
+  border-bottom: 1px solid gray;
+}
+.srtext {
+  margin-left: 50px;
+}
+.srul {
+  list-style: none;
+}
+.sub-list-sr {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+.sub-list-button-sr:hover {
+  border-radius: 10px;
+  height: 100%;
+  background-color: rgb(34, 248, 248, 0.2);
+}
+.no-search-results {
+  margin-top: 250px;
+  text-align: center;
+}
+
 
 /* responsive */
 @media (max-width:420px) {
