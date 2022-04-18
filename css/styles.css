@@ -305,8 +305,12 @@ h1 {
   border: 1px solid gray;
   border-radius: 20px;
   padding: 15px;
-  box-shadow: 0px 0px 10px 1px red;
+  box-shadow: 0px 0px 10px 1px rgba(255, 0, 0, 0.568);
+  background-color: rgba(255, 0, 0, 0.3);
   height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .gen-card {
   width: 30%;
@@ -314,7 +318,7 @@ h1 {
 .gen-card-container:hover {
   background-color: rgba(255, 0, 0, 0.568) ;
 }
-.gen-card h2 {
+.gen-card-container p {
   text-align: center;
 }
 
@@ -449,6 +453,7 @@ margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(255, 0, 0, 0.3);
 }
 .det-gen-card {
   width: 30%;
@@ -456,9 +461,11 @@ margin-bottom: 10px;
 .det-gen-card img {
   max-width: 80%;
   border-radius: 20px;
+  box-shadow: 0 0 10px 1px black;
 }
 .det-gen-card-container:hover {
   background-color: rgba(255, 0, 0, 0.568) ;
+  transition: 400ms;
 }
 
 /* search-results */
