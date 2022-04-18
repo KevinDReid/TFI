@@ -117,14 +117,12 @@ footer {
 /* banner */
 
 .banner {
-  height: 300px;
   margin-top: 2%;
   height: 300px;
   width: 100%;
   filter: blur(2px);
   z-index: 1;
 }
-
 /* index */
 .in-banner {
   background-image: url(../img/imagenesbanner/1.png);
@@ -358,11 +356,7 @@ margin-bottom: 0px;
 
 /* detail-artist */
 .main{
- background-image: url(../img/imagenescancion/david-guetta-logo.png);
- background-size: 600px;
- background-repeat: no-repeat;
- background-position: center;
- background-position: top;
+
 }
 
 .article2{
@@ -384,27 +378,27 @@ margin-bottom: 0px;
 .artistdiv{
   margin-left: 80px;
 }
+.all-artist{
+  display: flex;
+  justify-content: space-around;
+}
+.artista {
+  width: 60%;
+  height: 100px;
+  background-image: url(../img/imagenescancion/david-guetta-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .artista2{
   margin-left: 7%;
   color: lightslategray;
   font-size: 50px;
+
 }
 
 
 /* detail-album */
-.det-gen-banner {
-  background-image: url(../img/imagenesbanner/6.jpg);
-  background-size: cover;
-  background-position-y: 80%;
-  background-repeat: no-repeat;
-}
-.main1{
-  background-image: url(../img/imagenescancion/david-guetta-logo.png);
-  background-repeat: no-repeat;
-  background-size: 600px;
-  background-position: center;
-  background-position: top;
-}
 .album{
   display: flex;
   justify-content: space-around;
@@ -438,8 +432,17 @@ margin-left: 13%;
 .fondo1{
 margin-bottom: 10px;
 }
-  
-.divimportante{ 
+.divimportante {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+.img { 
+  justify-self: flex-end;
+  height: 100px;
+  width: 100%;
   background-image: url(../img/imagenescancion/david-guetta-logo.png);
   background-repeat: no-repeat;
   background-size: 500px;
@@ -479,6 +482,12 @@ margin-bottom: 10px;
 }
 
 /* detail-genres */
+.det-gen-banner {
+  background-image: url(../img/imagenesbanner/6.jpg);
+  background-size: cover;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
+}
 .art-det-gen {
   margin-top: 4%;
   display: flex;
@@ -535,29 +544,100 @@ margin-bottom: 10px;
     order:1;
   }
   /* banner */
-  .h1-banner {
-    display: flex;
-    justify-content: center;
+  .h1-banner h1 {
+    margin-top: 22%;
+    font-size: 70px;
   }
-
   /* footer */
-
+  footer {
+   margin-top: 20px; 
+  }
   /* index */
   .lists {
     flex-direction: column;
     margin-left: 0px;
     margin-right: 0px;
   }
+  .sub-list-button {
+    padding-top:10px;
+    padding-bottom:10px;
+  }
   /* genres */
-
+  .art-gen {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gen-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
   /* detail genres */
-
+  .art-det-gen {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .det-gen-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
   /* detail artist */
-
+  .all-artist {
+    flex-direction: column;
+    align-items: center;
+  }
+  .artista {
+    width: 95%;
+    height: 50px;
+  }
+  .artista2 {
+    margin-left: 0px;
+  }
+  .article2 {
+    justify-content: center;
+  }
+  .artistdiv {
+    width: 420px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .artistdiv img {
+    width: 100%;
+  }
+  .ollista {
+    padding-inline-start: 10px;
+  }
   /* detail album */
-
+  .album {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   /* detail track */
-
+  .divimportante {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    background-size: 400px;
+  }
+  .aside {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .divaside {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .permanence img {
+    width: 100%;
+  }
   /* playlist  */
 
   /* search results  */
