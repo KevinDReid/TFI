@@ -466,12 +466,21 @@ margin-bottom: 10px;
   margin-left: 90px;
 }
 .arc{
-  color:red;
+  background-color: lightslategray;
+  border-radius: 10px;
+  padding: 5px;
+  border:1px solid gray;
+}
+.arc:hover {
+  /* border:1px solid red; */
+  box-shadow: 0px 0px 10px gray;
+  transition: 500ms;
 }
 .div4{
   margin-top: 15px;
   display: flex;
   justify-content: flex-end;
+
 }
 .div5{
   margin-top: 15px;
