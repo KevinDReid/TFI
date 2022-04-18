@@ -285,14 +285,25 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
+.plsonginfo h5 {
+  margin: 0px 20px;
+}
 .songartist {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: flex-start;
   margin-left: 20px;
+}
+.bot {
+margin-bottom: 0px;
+}
+.top {
+  margin-top: 0px;
 }
 .plol {
   padding-inline-start: 0px;
+  margin-left: -100px
 }
 .white {
   color: white;
