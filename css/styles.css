@@ -107,15 +107,11 @@ footer {
 }
 .slide {
   animation: slide 5s infinite alternate;
-  block-size: max-content;
-  
-}
-footer p {
   text-align: center;
 }
 @keyframes slide {
-  from {margin-right: 100%;}
-  to {margin-right: 0%;}
+  from {margin-right: 70%;}
+  to {margin-right: 5%;}
 }
 
 /* banner */
@@ -328,7 +324,7 @@ h1 {
 
 /* detail-artist */
 .main{
- background-image: url(/TFI/img/imagenescancion/david\ guetta\ logo.png);
+ background-image: url(../img/imagenescancion/david-guetta-logo.png);
  background-size: 600px;
  background-repeat: no-repeat;
  background-position: center;
@@ -369,7 +365,7 @@ h1 {
   background-repeat: no-repeat;
 }
 .main1{
-  background-image: url(/TFI/img/imagenescancion/david\ guetta\ logo.png);
+  background-image: url(../img/imagenescancion/david-guetta-logo.png);
   background-repeat: no-repeat;
   background-size: 600px;
   background-position: center;
@@ -396,14 +392,11 @@ h1 {
 .listen {
 margin-left: 13%;
 }
-<<<<<<< HEAD
 .span1{
   font-size: 30px;
   color: lightslategray;
 }
 
-=======
->>>>>>> 753dcd2a0601a5e42a1a25200004f00bceaea968
 /* detail-track */
 
 .article .main .main1{
@@ -414,7 +407,7 @@ margin-bottom: 10px;
 }
   
 .divimportante{ 
-  background-image: url(/proyectointegrador/TFI/img/imagenescancion/david\ guetta\ logo.png);
+  background-image: url(../img/imagenescancion/david-guetta-logo.png);
   background-repeat: no-repeat;
   background-size: 500px;
   background-position:center ;
@@ -485,7 +478,8 @@ margin-bottom: 10px;
 /* search-results */
 
 /* responsive */
-
+  
+@media (max-width:420px) {
   /* index */
 
   /* genres */
@@ -499,6 +493,7 @@ margin-bottom: 10px;
   /* detail track */
 
   /* playlist  */
-  
+
   /* search results  */
 
+}
