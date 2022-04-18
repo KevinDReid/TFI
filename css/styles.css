@@ -327,15 +327,19 @@ h1 {
   flex-wrap: wrap;
   margin-top: 80px;
 }
-.lista{
-  margin-left: 9%;
+.lista{ 
+  margin-left: 5%;
 }
 .h3top{
   font-size: 40px;
   color: lightslategrey;
+  margin-top: 0px
 }
 .ollista{
   font-size: 30px;
+}
+.ollista li {
+  margin-bottom: 7%;
 }
 .artistdiv{
   margin-left: 80px;
@@ -574,6 +578,7 @@ margin-bottom: 10px;
   }
   .artistdiv img {
     width: 100%;
+    height: 400px;
   }
   .ollista {
     padding-inline-start: 10px;
@@ -605,6 +610,7 @@ margin-bottom: 10px;
   }
   .permanence img {
     width: 100%;
+    height: 300px;
   }
   .div2 {
     display: flex;
