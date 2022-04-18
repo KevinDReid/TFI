@@ -15,7 +15,7 @@ a {
 ul {
   list-style: none;
 }
-
+ /* header */
 header {
   overflow-y: hidden;
   display: flex;
@@ -65,12 +65,15 @@ nav {
 .logo img {
   width: 100%;
 }
-
-.search {
-  width: 15%;
+.all-search {
+  display: flex;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   background-color: rgba(51, 51, 51, 0.692);
+}
+.search {
+  width: 100%;
+
   padding-top: 18px;
   padding-bottom: 17px;
 }
@@ -80,14 +83,11 @@ nav {
   padding: 3px;
   border-radius: 10px;
 }
-
 .art-icon {
-  width: 2%;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  width: 15%;
   padding-top: 19px;
   padding-bottom: 21px;
-  background-color: rgba(51, 51, 51, 0.692);
+
 }
 
 /* colores */
@@ -358,6 +358,12 @@ h1 {
 
 
 /* detail-album */
+.det-gen-banner {
+  background-image: url(../img/imagenesbanner/6.jpg);
+  background-size: cover;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
+}
 .main1{
   background-image: url(../img/imagenescancion/david-guetta-logo.png);
   background-repeat: no-repeat;
@@ -367,14 +373,14 @@ h1 {
 }
 .album{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin-left: 80px;
 }
 .desc{
   font-size: 25px;
 }
 .divdisco{
-  margin-left: 70px;
+  margin-left: 0px;
 }
 .listenalbum{
   margin-left: 0%;
@@ -391,10 +397,6 @@ margin-left: 13%;
   color: lightslategray;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f8cb4418bc66d2057ad93f290bad92f67435536d
 /* detail-track */
 
 .article .main .main1{
@@ -427,12 +429,12 @@ margin-bottom: 10px;
 }
 .aside{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 70px
 }
 .divaside{
-  margin-left: 70ipx;
+  margin-left: 90px;
 }
 .arc{
   color:red;
@@ -441,17 +443,6 @@ margin-bottom: 10px;
   margin-top: 15px;
   display: flex;
   justify-content: flex-end;
-  padding: 10px;
-  border-radius: 10px;
-}
-.span2:hover{
-transition: 500ms;
-background-color: bisque;
-}
-.span2{
-  padding: 10px;
-  border-radius: 10px;
-  background-color:black;
 }
 
 /* detail-genres */
@@ -487,10 +478,43 @@ background-color: bisque;
 /* search-results */
 
 /* responsive */
-  
 @media (max-width:420px) {
-  /* index */
 
+  /* header */
+  header {
+    display: flex;
+    flex-direction:column-reverse;
+    height: 100%;
+  }
+  .links {
+    flex-wrap: wrap;
+  }
+  nav {
+    margin-bottom: 20px;
+  }
+  .all-search {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    order:1;
+  }
+  /* banner */
+  .h1-banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* footer */
+
+  /* index */
+  .lists {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   /* genres */
 
   /* detail genres */
