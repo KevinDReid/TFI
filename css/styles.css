@@ -358,12 +358,6 @@ h1 {
 
 
 /* detail-album */
-.det-gen-banner {
-  background-image: url(../img/imagenesbanner/6.jpg);
-  background-size: cover;
-  background-position-y: 80%;
-  background-repeat: no-repeat;
-}
 .main1{
   background-image: url(../img/imagenescancion/david-guetta-logo.png);
   background-repeat: no-repeat;
@@ -373,14 +367,14 @@ h1 {
 }
 .album{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-left: 80px;
 }
 .desc{
   font-size: 25px;
 }
 .divdisco{
-  margin-left: 0px;
+  margin-left: 70px;
 }
 .listenalbum{
   margin-left: 0%;
@@ -397,6 +391,10 @@ margin-left: 13%;
   color: lightslategray;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8cb4418bc66d2057ad93f290bad92f67435536d
 /* detail-track */
 
 .article .main .main1{
@@ -429,12 +427,12 @@ margin-bottom: 10px;
 }
 .aside{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-left: 70px
 }
 .divaside{
-  margin-left: 90px;
+  margin-left: 70ipx;
 }
 .arc{
   color:red;
@@ -443,6 +441,17 @@ margin-bottom: 10px;
   margin-top: 15px;
   display: flex;
   justify-content: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+}
+.span2:hover{
+transition: 500ms;
+background-color: bisque;
+}
+.span2{
+  padding: 10px;
+  border-radius: 10px;
+  background-color:black;
 }
 
 /* detail-genres */
