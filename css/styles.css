@@ -107,7 +107,7 @@ footer {
   text-align: center;
 }
 @keyframes slide {
-  from {margin-right: 75.8%; color: yellow;}
+  from {margin-right: 70%; color: yellow;}
   to {margin-right: 0%; color: red;}
 }
 
