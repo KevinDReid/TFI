@@ -336,11 +336,27 @@ margin-bottom: 0px;
 }
 
 /* detail-artist */
+.all-artist{
+  display: flex;
+  flex-direction: column;
+}
+.artista {
+  width: 60%;
+  height: 100px;
+  background-image: url(../img/imagenescancion/david-guetta-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+}
 .article2{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 80px;
+}
+.artistdiv{
+  margin-left: 80px;
 }
 .lista{ 
   margin-left: 5%;
@@ -355,22 +371,6 @@ margin-bottom: 0px;
 }
 .ollista li {
   margin-bottom: 7%;
-}
-.artistdiv{
-  margin-left: 80px;
-}
-.all-artist{
-  display: flex;
-  flex-direction: column;
-}
-.artista {
-  width: 60%;
-  height: 100px;
-  background-image: url(../img/imagenescancion/david-guetta-logo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: center;
 }
 .artista2{
   margin-left: 7%;
