@@ -583,9 +583,11 @@ margin-bottom: 10px;
   /* footer */
   footer {
    margin-top: 20px; 
+   justify-content: center;
   }
   .slide {
     animation: slide 0s;
+    font-size: small;
   }
   /* index */
   .lists {
