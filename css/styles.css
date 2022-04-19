@@ -97,7 +97,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-top: 100px;
+  margin-top: 70px;
   width: 100%;
   height: 83px;
   box-sizing: border-box;
@@ -107,8 +107,8 @@ footer {
   text-align: center;
 }
 @keyframes slide {
-  from {margin-right: 75.8%;}
-  to {margin-right: 0%;}
+  from {margin-right: 75.8%; color: yellow;}
+  to {margin-right: 0%; color: red;}
 }
 
 /* banner */
@@ -532,7 +532,7 @@ margin-bottom: 10px;
 .sub-list-button-sr:hover {
   border-radius: 10px;
   height: 100%;
-  background-color: rgb(34, 248, 248, 0.2);
+  background-color:  rgba(255, 0, 0, 0.3675);
 }
 .no-search-results {
   margin-top: 250px;
