@@ -15,7 +15,7 @@ a {
 ul {
   list-style: none;
 }
-
+ /* header */
 header {
   overflow-y: hidden;
   display: flex;
@@ -65,12 +65,15 @@ nav {
 .logo img {
   width: 100%;
 }
-
-.search {
-  width: 15%;
+.all-search {
+  display: flex;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   background-color: rgba(51, 51, 51, 0.692);
+}
+.search {
+  width: 100%;
+
   padding-top: 18px;
   padding-bottom: 17px;
 }
@@ -80,14 +83,11 @@ nav {
   padding: 3px;
   border-radius: 10px;
 }
-
 .art-icon {
-  width: 2%;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  width: 15%;
   padding-top: 19px;
   padding-bottom: 21px;
-  background-color: rgba(51, 51, 51, 0.692);
+
 }
 
 /* colores */
@@ -110,21 +110,19 @@ footer {
   text-align: center;
 }
 @keyframes slide {
-  from {margin-right: 70%;}
-  to {margin-right: 5%;}
+  from {margin-right: 75.8%;}
+  to {margin-right: 0%;}
 }
 
 /* banner */
 
 .banner {
-  height: 300px;
   margin-top: 2%;
   height: 300px;
   width: 100%;
   filter: blur(2px);
   z-index: 1;
 }
-
 /* index */
 .in-banner {
   background-image: url(../img/imagenesbanner/1.png);
@@ -224,34 +222,39 @@ h1 {
 }
 
 /* playlist */
-.plimg {
-  width: 30%;
-  height: 200px;
-}
-@keyframes animatepls {
-   from {top: 0px;}
- to {top: 100px;}
-}
 .playlist {
   display: flex;
   flex-direction: row;
   align-items: center;
-  animation: animatepls 1s infinite;
+}
+.plimg {
+  block-size: fit-content;
+  width: 25%;
+  height: 300px;
+  margin-left: 120px;
 }
 .yourpl {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 8%;
+}
+.h1pl {
+  margin: 0px;
 }
 .plinfo {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid gray;
   color: rgb(182, 182, 182);
+  margin: 0 100px;
 }
-.songspl {
+.albumtextpl {
+  margin-left: 80px;
+}
+.songsplimg {
   width: 100px;
   height: 100px;
 }
@@ -259,31 +262,52 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  margin:  15px 0px;
   color: rgb(182, 182, 182);
 }
 .weight {
   font-weight: 400;
 }
-.startli {
-  display: flex;
-  justify-self: flex-start;
-  flex-wrap: wrap;
-}
 .plsonginfo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+}
+.plsonginfo h5 {
+  width: 5px;
+  margin: 0 20px;
 }
 .songartist {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+  width: 200px;
+}
+.bot {
+margin-bottom: 0px;
+}
+.top {
+  margin-top: 0px;
+}
+.plsize1 {
+  width: 40%;
+}
+.plsize2 {
+  width: 30%;
+}
+.plsize3 {
+  width: 15%;
+}
+.plsize4 {
+  display: flex;
+  width: 15%;
+  justify-content: center;
 }
 .plol {
-  list-style: decimal;
+  padding-inline-start: 0px;
+  margin: 0 100px;
 }
 .white {
   color: white;
@@ -323,58 +347,61 @@ h1 {
 }
 
 /* detail-artist */
-.main{
- background-image: url(../img/imagenescancion/david-guetta-logo.png);
- background-size: 600px;
- background-repeat: no-repeat;
- background-position: center;
- background-position: top;
-}
-
 .article2{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 80px;
 }
-.lista{
-  margin-left: 9%;
+.lista{ 
+  margin-left: 5%;
 }
 .h3top{
   font-size: 40px;
   color: lightslategrey;
+  margin-top: 0px
 }
 .ollista{
   font-size: 30px;
 }
+.ollista li {
+  margin-bottom: 7%;
+}
 .artistdiv{
   margin-left: 80px;
+}
+.all-artist{
+  display: flex;
+  flex-direction: column;
+}
+.artista {
+  width: 60%;
+  height: 100px;
+  background-image: url(../img/imagenescancion/david-guetta-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
 }
 .artista2{
   margin-left: 7%;
   color: lightslategray;
   font-size: 50px;
+
 }
 
 
 /* detail-album */
-.main1{
-  background-image: url(../img/imagenescancion/david-guetta-logo.png);
-  background-repeat: no-repeat;
-  background-size: 600px;
-  background-position: center;
-  background-position: top;
-}
 .album{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin-left: 80px;
 }
 .desc{
   font-size: 25px;
 }
 .divdisco{
-  margin-left: 70px;
+  margin-left: 0px;
 }
 .listenalbum{
   margin-left: 0%;
@@ -390,11 +417,6 @@ margin-left: 13%;
   font-size: 30px;
   color: lightslategray;
 }
-
-<<<<<<< HEAD
-=======
-
->>>>>>> f8cb4418bc66d2057ad93f290bad92f67435536d
 /* detail-track */
 
 .article .main .main1{
@@ -403,8 +425,17 @@ margin-left: 13%;
 .fondo1{
 margin-bottom: 10px;
 }
-  
-.divimportante{ 
+.divimportante {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+.img { 
+  justify-self: flex-end;
+  height: 100px;
+  width: 100%;
   background-image: url(../img/imagenescancion/david-guetta-logo.png);
   background-repeat: no-repeat;
   background-size: 500px;
@@ -427,34 +458,47 @@ margin-bottom: 10px;
 }
 .aside{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 70px
 }
 .divaside{
+<<<<<<< HEAD
   margin-left: 70px;
+=======
+  margin-left: 90px;
+>>>>>>> 2a43ee18dd7024e17a7f244b10952d7b562e8161
 }
 .arc{
-  color:red;
+  background-color: lightslategray;
+  border-radius: 10px;
+  padding: 5px;
+  border:1px solid gray;
+}
+.arc:hover {
+  /* border:1px solid red; */
+  box-shadow: 0px 0px 10px gray;
+  transition: 500ms;
+}
+.div4{
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+
 }
 .div5{
   margin-top: 15px;
   display: flex;
   justify-content: flex-end;
-  padding: 10px;
-  border-radius: 10px;
-}
-.span2:hover{
-transition: 500ms;
-background-color: bisque;
-}
-.span2{
-  padding: 10px;
-  border-radius: 10px;
-  background-color:black;
 }
 
 /* detail-genres */
+.det-gen-banner {
+  background-image: url(../img/imagenesbanner/6.jpg);
+  background-size: cover;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
+}
 .art-det-gen {
   margin-top: 4%;
   display: flex;
@@ -485,20 +529,135 @@ background-color: bisque;
 }
 
 /* search-results */
+.srborder {
+  border-bottom: 1px solid gray;
+}
+.srtext {
+  margin-left: 50px;
+}
+.srul {
+  list-style: none;
+}
+.sub-list-sr {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+.sub-list-button-sr:hover {
+  border-radius: 10px;
+  height: 100%;
+  background-color: rgb(34, 248, 248, 0.2);
+}
+.no-search-results {
+  margin-top: 250px;
+  text-align: center;
+}
+
 
 /* responsive */
-  
 @media (max-width:420px) {
+
+  /* header */
+  header {
+    display: flex;
+    flex-direction:column-reverse;
+    height: 100%;
+  }
+  .links {
+    flex-wrap: wrap;
+  }
+  nav {
+    margin-bottom: 20px;
+  }
+  .all-search {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    order:1;
+  }
+  /* banner */
+  .h1-banner h1 {
+    margin-top: 22%;
+    font-size: 70px;
+  }
+  /* footer */
+  footer {
+   margin-top: 20px; 
+  }
+  .slide {
+    animation: slide 0s;
+  }
   /* index */
-
+  .lists {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .sub-list-button {
+    padding-top:10px;
+    padding-bottom:10px;
+  }
   /* genres */
-
+  .art-gen {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gen-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
   /* detail genres */
-
+  .art-det-gen {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .det-gen-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
   /* detail artist */
-
+  .all-artist {
+    flex-direction: column;
+    align-items: center;
+  }
+  .artista {
+    width: 95%;
+    height: 50px;
+  }
+  .artista2 {
+    margin-left: 0px;
+  }
+  .article2 {
+    justify-content: center;
+  }
+  .artistdiv {
+    width: 420px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .artistdiv img {
+    width: 100%;
+    height: 400px;
+  }
+  .ollista {
+    padding-inline-start: 10px;
+  }
   /* detail album */
-
+  .album {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   /* detail track */
   .article{
     flex-direction: column;
@@ -506,7 +665,80 @@ background-color: bisque;
 .divimportante{
   flex-wrap: wrap;
 }
+  .divimportante {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    background-size: 400px;
+  }
+  .aside {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .divaside {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .permanence img {
+    width: 100%;
+    height: 300px;
+  }
+  .div2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
   /* playlist  */
+  .playlist {
+    justify-content: flex-start
+
+  }
+  .yourpl p{
+    font-size: xx-small;
+  }
+  .h1pl {
+    font-size: x-large;
+  }
+  .plimg {
+    width: 48%;
+    height: 180px;
+    margin-left: 20px;
+  }
+  .plinfo {
+    margin: 0px;
+  }
+  .plol {
+    margin: 0 0 0 -15px;
+  }
+  .plsize1 {
+    width: 70%;
+  }
+  .plsize2 p {
+    width: 0px;
+    overflow: hidden;
+  }
+  .plsize3 {
+    width: 0px;
+    overflow: hidden;
+  }
+  .plsongs {
+    font-size: x-small;
+  }
+  .plsonginfo h5 {
+    width: 0px;
+    overflow: hidden;
+  }
+  .songsplimg {
+    width: 70px;
+    height: 70px;
+  }
+  .titleposition {
+    margin-left: 30px;
+  }
 
   /* search results  */
+  .srtext {
+    margin-left: 20px;
+  }
 
