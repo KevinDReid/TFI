@@ -17,7 +17,6 @@ ul {
 }
  /* header */
 header {
-  overflow-y: hidden;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -86,8 +85,6 @@ nav {
 .art-icon {
   width: 15%;
   padding-top: 19px;
-  padding-bottom: 21px;
-
 }
 
 /* colores */
@@ -100,7 +97,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-top: 100px;
+  margin-top: 70px;
   width: 100%;
   height: 83px;
   box-sizing: border-box;
@@ -110,8 +107,8 @@ footer {
   text-align: center;
 }
 @keyframes slide {
-  from {margin-right: 75.8%;}
-  to {margin-right: 0%;}
+  from {margin-right: 70%; color: yellow;}
+  to {margin-right: 0%; color: red;}
 }
 
 /* banner */
@@ -172,8 +169,6 @@ h1 {
 .list {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   height: 100%;
   padding-left: 0px;
 }
@@ -187,8 +182,7 @@ h1 {
   width: 360px;
   height: 100%;
   border-top: 1px solid gray;
-  display: flex;
-  justify-content: center;
+  background-color: rgba(70, 69, 69, 0.377);
 }
 .sub-list:hover {
   background-color: rgba(255, 0, 0, 0.3);
@@ -214,11 +208,6 @@ h1 {
 .content-container img {
   border-radius: 20%;
   max-height: 110px;
-}
-.sub-list-button {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(70, 69, 69, 0.377);
 }
 
 /* playlist */
@@ -347,11 +336,24 @@ margin-bottom: 0px;
 }
 
 /* detail-artist */
+.all-artist{
+  display: flex;
+  flex-direction: column;
+}
+.artista {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin:10px
+}
 .article2{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 80px;
+}
+.artistdiv{
+  margin-left: 80px;
 }
 .lista{ 
   margin-left: 5%;
@@ -366,22 +368,6 @@ margin-bottom: 0px;
 }
 .ollista li {
   margin-bottom: 7%;
-}
-.artistdiv{
-  margin-left: 80px;
-}
-.all-artist{
-  display: flex;
-  flex-direction: column;
-}
-.artista {
-  width: 60%;
-  height: 100px;
-  background-image: url(../img/imagenescancion/david-guetta-logo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: center;
 }
 .artista2{
   margin-left: 7%;
@@ -411,7 +397,7 @@ margin-bottom: 0px;
   margin-bottom: 25%;
 }
 .listen {
-margin-left: 13%;
+margin-left: 10%;
 }
 .span1{
   font-size: 30px;
@@ -439,7 +425,7 @@ margin-bottom: 10px;
   background-image: url(../img/imagenescancion/david-guetta-logo.png);
   background-repeat: no-repeat;
   background-size: 500px;
-  background-position:center ;
+  background-position: center;
 }
 .texto1{
   margin-right: 8%;
@@ -547,7 +533,7 @@ margin-bottom: 10px;
 .sub-list-button-sr:hover {
   border-radius: 10px;
   height: 100%;
-  background-color: rgb(34, 248, 248, 0.2);
+  background-color:  rgba(255, 0, 0, 0.3675);
 }
 .no-search-results {
   margin-top: 250px;
@@ -587,9 +573,11 @@ margin-bottom: 10px;
   /* footer */
   footer {
    margin-top: 20px; 
+   justify-content: center;
   }
   .slide {
     animation: slide 0s;
+    font-size: small;
   }
   /* index */
   .lists {
@@ -597,9 +585,10 @@ margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
   }
-  .sub-list-button {
-    padding-top:10px;
-    padding-bottom:10px;
+  .sub-list {
+    padding-top:20px;
+    padding-bottom:20px;
+ 
   }
   /* genres */
   .art-gen {
