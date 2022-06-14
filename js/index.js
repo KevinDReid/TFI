@@ -45,9 +45,6 @@ fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks'
         let name = data.data[i].title;
         let datId = data.data[i].id;
         albumUl.innerHTML += `<li class="sub-list"><a href="detail-track.html?id=${datId}" class="sub-list-button"><div class="content-container"><img src="${pic}" alt="artist"> <div class="list-text"><h3>${name}</h3></div></div></a></li>`
-        sButton.addEventListener('click', function() {
-            location.search
-        })
     }
 })
 
