@@ -425,10 +425,6 @@ margin-bottom: 10px;
   justify-self: flex-end;
   height: 100px;
   width: 100%;
-  background-image: url(../img/imagenescancion/david-guetta-logo.png);
-  background-repeat: no-repeat;
-  background-size: 500px;
-  background-position: center;
 }
 .texto1{
   margin-right: 8%;
@@ -653,6 +649,7 @@ margin-bottom: 10px;
   }
   .img {
     background-size: 400px;
+    font-size: 20px;
   }
   .aside {
     flex-direction: column;
