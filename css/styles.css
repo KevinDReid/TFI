@@ -312,7 +312,9 @@ margin-bottom: 0px;
   background-repeat: no-repeat;
 }
 .art-gen {
-  margin-top: 4%;
+  margin: 8%;
+  height: 1500px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
 }
@@ -329,6 +331,7 @@ margin-bottom: 0px;
 }
 .gen-card {
   width: 30%;
+  height: 8%;
 }
 .gen-card-container:hover {
   background-color: rgba(255, 0, 0, 0.568) ;
@@ -336,6 +339,7 @@ margin-bottom: 0px;
 .gen-card-container p {
   text-align: center;
 }
+
 
 /* detail-artist */
 .all-artist{
@@ -592,6 +596,7 @@ margin-bottom: 10px;
   .art-gen {
     margin-top: 4%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
