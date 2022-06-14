@@ -99,6 +99,7 @@ footer {
   justify-content: flex-end;
   margin-top: 70px;
   width: 100%;
+  bottom:0;
   height: 83px;
   box-sizing: border-box;
 }
@@ -491,6 +492,8 @@ margin-bottom: 10px;
   margin-top: 4%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
 }
 .det-gen-card-container {
   border: 1px solid gray;
@@ -505,6 +508,7 @@ margin-bottom: 10px;
 }
 .det-gen-card {
   width: 30%;
+  margin-bottom: 30px;
 }
 .det-gen-card img {
   max-width: 80%;
