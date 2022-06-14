@@ -451,11 +451,7 @@ margin-bottom: 10px;
   margin-left: 70px
 }
 .divaside{
-<<<<<<< HEAD
-  margin-left: 70px;
-=======
   margin-left: 90px;
->>>>>>> 2a43ee18dd7024e17a7f244b10952d7b562e8161
 }
 .arc{
   background-color: lightslategray;
@@ -653,9 +649,9 @@ margin-bottom: 10px;
   .article{
     flex-direction: column;
   }
-.divimportante{
-  flex-wrap: wrap;
-}
+  .divimportante{
+    flex-wrap: wrap;
+  }
   .divimportante {
     display: flex;
     flex-direction: column;
@@ -731,5 +727,4 @@ margin-bottom: 10px;
   /* search results  */
   .srtext {
     margin-left: 20px;
-  }
-
+  }}
