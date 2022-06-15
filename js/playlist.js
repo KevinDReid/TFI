@@ -1,8 +1,14 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get('id');
+fetch('')
+    .then(function(response) {
+        return response.json()
+})
+    .then(function(data){
+        console.log(data);
 
-let dataSong = data.data[i]
+        let dataSong = data.data[i]
 
 let duration = dataSong.duration
 function time (){
@@ -35,7 +41,7 @@ document.querySelector(".fa-heart").addEventListener('click', function(event) {
         like.innerHTML = `<p><a href="#"><i class="fa-regular fa-heart greenyellow"></i></a> ${time()}</p>`
 
     } else {
-        likedsongs.push(idGif);
+        likedsongs.push(id);
         like.innerHTML = `<p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a> ${time()}</p>`
 
     }
@@ -46,3 +52,6 @@ document.querySelector(".fa-heart").addEventListener('click', function(event) {
 
     console.log(localStorage.getItem("likedSongs"));
 });
+})
+    .catch(function(error){
+    console.log('Este es el error: ' + error);})

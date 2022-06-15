@@ -8,11 +8,10 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
 })
     .then(function(data){
         console.log(data);
-        for(let i=0; i<1; i++){
             let albumCover = document.querySelector('.permanence')
-            let dataAlbum = data.data[i].album
-            let dataArtist = data.data[i].artist
-            let dataSong = data.data[i]
+            let dataAlbum = data.album
+            let dataArtist = data.artist
+            let dataSong = data
 
             let duration = dataSong.duration
             function time (){
@@ -29,14 +28,14 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             albumCover.innerHTML = `<img height="640" width="640" src="${dataAlbum.cover_xl}" alt="${dataAlbum.title}">`
 
             let trackInfo = document.querySelector ('.divimportante')
-            trackInfo.innerHTML = `<div class="img">
+            trackInfo.innerHTML = `<div class="arreglo-css">
             </div>
             <div class="texto1">
                 <h4 class="david"> ${dataArtist.name} / ${dataAlbum.title} </h4>
                 <h2 class="cancion"> ${dataSong.title}</h3>
             </div>`
 
-            let artistName = document.querySelector ('.img')
+            let artistName = document.querySelector ('.arreglo-css')
             artistName.innerHTML = `<h1>${dataArtist.name}</h1>`
 
             let fullTrackInfo = document.querySelector ('.divaside')
@@ -45,7 +44,7 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             <span> ${dataSong.track_position}. </span><span> ${dataSong.title}</span>
             <span class="tiempo"> ${time()}</span>
             
-            <span class="triangulo"> <iframe style="border-radius:12px" src="${dataSong.preview}" width="100%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></span>
+            <span class="triangulo"> <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="80%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe></span>
             <audio src="${dataAlbum.cover_medium}"></audio>
           
             <h3 class="span1"> Acerca del álbum</h3>
@@ -70,9 +69,9 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
               likedSongs = likedSongsArray
          } 
               let add = document.querySelector(".arc");
-              if(likedsongs.includes(id)){
+              if(likedSongs.includes(id)){
             add.innerText = "Sacar de mi playlist"
-}
+} else {}
         document.querySelector(".fa-heart").addEventListener('click', function(event) {
         event.preventDefault()
 
@@ -82,7 +81,7 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
         add.innerText = "Añadir a mi playlist"
 
       } else {
-        likedsongs.push(id);
+        likedSongs.push(id);
         add.innerText = "Sacar de playlist"
 
     }
@@ -91,7 +90,7 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
     localStorage.setItem('likedSongs', FavoritosToString)
 
         }
-      )}
+      )
 })
     .catch(function(error){
     console.log('Este es el error: ' + error);})

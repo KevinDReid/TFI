@@ -421,7 +421,7 @@ margin-bottom: 10px;
 .divimportante {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
 }
@@ -681,6 +681,10 @@ margin-bottom: 10px;
   .div2 {
     display: flex;
     flex-wrap: wrap;
+  }
+  .arreglo-css {
+    display: flex;
+    justify-content: center;
   }
   /* playlist  */
   .playlist {
