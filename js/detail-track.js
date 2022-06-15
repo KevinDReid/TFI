@@ -58,14 +58,40 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
                       <div class="div3">
                         <span class="span1"> Genero:  </span><span class="desc"> Electronica</span>
                       </div>
-            <div class="div4">
-              <span class="span2"> <a href="playlist.html" class="arc" >Añadir a mi playlist</a> </span>
-            </div>
             <div class="div5">
               <span class="span2"> <a href="playlist.html" class="arc" >Ver mi playlist</a> </span>
             </div>
           </div>`
+          let likedSongs = [];
+
+          let storageLikedSongs = localStorage.getItem('likedSongs')
+              if(storageLikedSongs){
+              let likedSongsArray = JSON.parse(storageLikedSongs)
+              likedSongs = likedSongsArray
+         } 
+              let add = document.querySelector(".arc");
+              if(likedsongs.includes(id)){
+            add.innerText = "Sacar de mi playlist"
+}
+        document.querySelector(".fa-heart").addEventListener('click', function(event) {
+        event.preventDefault()
+
+        if(likedSongs.includes(id)){
+        let chaucancion = likedSongs.indexOf(id)
+        likedSongs.splice(chaucancion, 1);
+        add.innerText = "Añadir a mi playlist"
+
+      } else {
+        likedsongs.push(id);
+        add.innerText = "Sacar de playlist"
+
+    }
+
+    let FavoritosToString = JSON.stringify(likedSongs);
+    localStorage.setItem('likedSongs', FavoritosToString)
+
         }
+      )}
 })
     .catch(function(error){
     console.log('Este es el error: ' + error);})
