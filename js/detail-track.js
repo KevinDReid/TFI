@@ -54,9 +54,9 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             <div class="div2">
                         <span class="span1"> Fecha de lanzamiento: </span> <span class="desc"> ${dataAlbum.release_date}</span>
                       </div>
-                      <div class="div3">
-                        <span class="span1"> Genero:  </span><span class="desc"> Electronica</span>
-                      </div>
+                      <div class="div4">
+                      <span class="span2"> <a href="playlist.html" class="arc add" >Añadir a mi playlist</a> </span>
+                    </div>
             <div class="div5">
               <span class="span2"> <a href="playlist.html" class="arc" >Ver mi playlist</a> </span>
             </div>
@@ -64,15 +64,16 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
           let likedSongs = [];
 
           let storageLikedSongs = localStorage.getItem('likedSongs')
+
               if(storageLikedSongs){
               let likedSongsArray = JSON.parse(storageLikedSongs)
               likedSongs = likedSongsArray
          } 
-              let add = document.querySelector(".arc");
+              let add = document.querySelector(".add");
               if(likedSongs.includes(id)){
             add.innerText = "Sacar de mi playlist"
 } else {}
-        document.querySelector(".fa-heart").addEventListener('click', function(event) {
+        add.addEventListener('click', function(event) {
         event.preventDefault()
 
         if(likedSongs.includes(id)){
@@ -83,7 +84,6 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
       } else {
         likedSongs.push(id);
         add.innerText = "Sacar de playlist"
-
     }
 
     let FavoritosToString = JSON.stringify(likedSongs);

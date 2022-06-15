@@ -257,8 +257,15 @@ h1 {
   margin:  15px 0px;
   color: rgb(182, 182, 182);
 }
+.plsongs:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  transition: 200ms;
+}
 .weight {
   font-weight: 400;
+}
+.newsize {
+  width: 400px;
 }
 .plsonginfo {
   display: flex;
@@ -286,8 +293,14 @@ margin-bottom: 0px;
 .plsize1 {
   width: 40%;
 }
+.plsize1 p a{
+  color: rgb(182, 182, 182);
+}
 .plsize2 {
   width: 30%;
+}
+.plsize2 a{
+  color: rgb(182, 182, 182);
 }
 .plsize3 {
   width: 15%;
