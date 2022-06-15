@@ -180,8 +180,9 @@ h1 {
 }
 .sub-list {
   width: 360px;
-  height: 100%;
+  height: 142px;
   border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
   background-color: rgba(70, 69, 69, 0.377);
 }
 .sub-list:hover {
@@ -189,6 +190,7 @@ h1 {
   transition: 500ms;
 }
 .content-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -205,7 +207,7 @@ h1 {
 .list-text p {
   margin-top:-5%;
 }
-.content-container img {
+.content-container img{
   border-radius: 20%;
   max-height: 110px;
 }
@@ -341,13 +343,10 @@ margin-bottom: 0px;
   flex-direction: column;
 }
 .artista {
-  width: 60%;
   height: 100px;
-  background-image: url(../img/imagenescancion/david-guetta-logo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin:10px
 }
 .article2{
   display: flex;
@@ -400,7 +399,7 @@ margin-bottom: 0px;
   margin-bottom: 25%;
 }
 .listen {
-margin-left: 13%;
+margin-left: 10%;
 }
 .span1{
   font-size: 30px;
@@ -643,6 +642,12 @@ margin-bottom: 10px;
     margin-right: 10px;
   }
   /* detail track */
+  .article{
+    flex-direction: column;
+  }
+  .divimportante{
+    flex-wrap: wrap;
+  }
   .divimportante {
     display: flex;
     flex-direction: column;
@@ -719,6 +724,4 @@ margin-bottom: 10px;
   /* search results  */
   .srtext {
     margin-left: 20px;
-  }
-
-}
+  }}
