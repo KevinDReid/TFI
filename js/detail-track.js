@@ -26,7 +26,7 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             }
 
 
-            albumCover.innerHTML = `<img height="640" width="640" src="${dataAlbum.cover_big}" alt="${dataAlbum.title}">`
+            albumCover.innerHTML = `<img height="640" width="640" src="${dataAlbum.cover_xl}" alt="${dataAlbum.title}">`
 
             let trackInfo = document.querySelector ('.divimportante')
             trackInfo.innerHTML = `<div class="img">
@@ -42,7 +42,7 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             let fullTrackInfo = document.querySelector ('.divaside')
             fullTrackInfo.innerHTML = `<div class="texto">
             <h3 class="span1"> Canción</h3>
-            <span> ${dataSong.position}. </span><span> ${dataSong.title}</span>
+            <span> ${dataSong.track_position}. </span><span> ${dataSong.title}</span>
             <span class="tiempo"> ${time()}</span>
             
             <span class="triangulo"> <iframe style="border-radius:12px" src="${dataSong.preview}" width="100%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></span>
