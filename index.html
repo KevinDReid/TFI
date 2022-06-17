@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Poppins:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header>
+      <article class="logo">
+        <a href="index.html"><img src="./img/Vibes.gif" alt="logo" /></a>
+      </article>
+
+      <nav>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="genres.html">Géneros</a></li>
+          <li><a href="detail-genres.html">Detalles del género</a></li>
+          <li><a href="detail-artist.html">Artistas</a></li>
+          <li><a href="detail-album.html">Discos</a></li>
+          <li><a href="detail-track.html">Canciones</a></li>
+          <li><a href="playlist.html">Favoritos</a></li>
+        </ul>
+      </nav>
+
+      <article class="all-search">
+        <section class="art-icon">
+          <span class="icon"
+            ><a href="search-results.html"><i class="fa fa-search"></i></a
+          ></span>
+        </section>
+
+        <section class="search">
+          <form action="search-results.html" method="GET">
+            <input type="text" name="buscador" value="" />
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </article>
+    </header>
+
+    <main>
+      <article class="h1-banner">
+        <h1>Vibes</h1>
+      </article>
+      <article class="in-banner banner"></article>
+
+      <article class="lists">
+        <section class="list-container">
+          <h2 class="h2-list">Artistas</h2>
+          <ul class="list list-artist"></ul>
+        </section>
+
+        <section class="list-container">
+          <h2 class="h2-list">Discos</h2>
+          <ul class="list list-albums"></ul>
+        </section>
+
+        <section class="list-container">
+          <h2 class="h2-list">Canciones</h2>
+          <ul class="list list-tracks"></ul>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p class="slide">
+        Integrantes:
+        <br />
+        Kevin Douglas Reid, Manuel Zimmermann y Fausto Moché
+      </p>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
