@@ -30,7 +30,16 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${kevin
             .then(function(data){
                 console.log(data);
                 for (let i=0; i<5; i++)
-                lista.innerText = data.data[i].title
+                lista.innerHTML += `<li>
+                 <p>
+                  <a
+                    href="./detail-album.html?id=${data.data[i].id}"
+                    target="_blank"
+                  >
+                    ${data.data[i].title}</a
+                  >
+                </p>
+              </li>`
 
 })
             .catch(function(error){
