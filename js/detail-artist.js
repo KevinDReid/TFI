@@ -2,6 +2,8 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let kevinId = queryStringObj.get("id");
  
+let img = document.querySelector(".logo")
+
 
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${kevinId}`)//info de artista solo para nombre y foto

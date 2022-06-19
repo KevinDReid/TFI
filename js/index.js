@@ -1,7 +1,7 @@
 let albumUl = document.querySelector('.list-albums');
 let sButton = document.querySelector('.sub-list-button');
 // Artists
-fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists')
+fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists')
     .then(function(response) {
         return response.json()
 })
@@ -18,7 +18,7 @@ fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists
     console.log('Este es el error: ' + error);})
 
 // Discos
-fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums')
+fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums')
     .then(function(response) {
         return response.json()
 })
@@ -34,7 +34,7 @@ fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums'
     console.log('Este es el error: ' + error);})
 
 // Tracks
-fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks')
+fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks')
     .then(function(response) {
         return response.json()
 })

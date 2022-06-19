@@ -751,3 +751,8 @@ margin-bottom: 10px;
   .srtext {
     margin-left: 20px;
   }}
+
+  .canciones{
+    display: flex;
+    flex-direction: column;
+  }

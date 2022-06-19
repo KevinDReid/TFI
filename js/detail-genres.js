@@ -3,7 +3,7 @@ let queryStringObj = new URLSearchParams(queryString);
 let bar = queryStringObj.get('id');
 let card = document.querySelector('.art-det-gen');
 let mainTitle = document.querySelector('h1');
-fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${bar}/artists`)
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${bar}/artists`)
 .then(function(response) {
     return response.json()
 })
@@ -18,7 +18,7 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${bar}/ar
 })
 .catch(function(error){
     console.log('Este es el error: ' + error);})
-fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${bar}`)
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${bar}`)
     .then(function(response) {
         return response.json()
 })

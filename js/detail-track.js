@@ -2,7 +2,7 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get('id');
 
-fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     .then(function(response) {
         return response.json()
 })

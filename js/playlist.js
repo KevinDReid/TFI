@@ -6,7 +6,7 @@ let likedSongsArray = JSON.parse(storageLikedSongs)
 let likedSongs = [];
 
 for (let i=0; i<likedSongsArray.length; i++){
-fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${likedSongsArray[i]}`)
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${likedSongsArray[i]}`)
     .then(function(response) {
         return response.json()
 })
