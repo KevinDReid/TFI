@@ -42,8 +42,10 @@ console.log(articulos)
   </ul>
 </article>`  
 }
-
-
+})
+.then(function(){
+ let gif= document.querySelector(".gif")
+ gif.style.display = "none"
 })
     .catch(function(error){
     console.log('Este es el error: ' + error);})
