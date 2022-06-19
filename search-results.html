@@ -49,41 +49,24 @@
       </nav>
 
       <article class="all-search">
-        <section class="art-icon">
-          <span class="icon"
-            ><a href="search-results.html"><i class="fa fa-search"></i></a
-          ></span>
-        </section>
-
+        
         <section class="search">
-          <form action="search-results.html">
-            <input type="search" id="search" placeholder="Search..." />
+          <form action="search-results.html" method="GET">
+            <input type="text" name="buscador" value="" />
+            <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </section>
       </article>
     </header>
     <main>
       <section class="srborder">
-       <h2 class="srtext">RESULTADOS PARA : PERMANENCE</h2>
+       <h2 class="srtext">CARGANDO</h2>
+       <img class="gif" src="./img/loading.gif" alt="gif">
       </section>
-      <article>
-        <ul class="srul">
-          <li class="sub-list-sr">
-            <a href="detail-track.html" class="sub-list-button-sr">
-              <div class="content-container">
-                <img
-                  src="./img/imagenescancion/logo cancion.jpeg"
-                  alt="test"
-                />
-                <div class="list-text">
-                  <h3>Permanence</h3>
-                  <p>David Guetta</p>
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </article>
+      <section class="articulos">
+
+
+     </section>
       <article class="no-search-results">
         <p> No se han encontrado más resultados de búsqueda.</p>
       </article>

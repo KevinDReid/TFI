@@ -1,41 +1,37 @@
-//let queryString = location.search;
-//let queryStringObj = new URLSearchParams(queryString);
-//queryStringObj.get("id");
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let kevinId = queryStringObj.get("id");
 
-   let nombreAlbum = document.querySelector(".artista2");
-    let artista = document.querySelector(".artista");
-    let img = document.querySelector(".fotoalbum")
-
-
-let url = ("https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums")
-  fetch(url)
-      .then(function(response) {
-          return response.json()
-
-  })
-      .then(function(data){
-          console.log(data);
-          for (let i=0; i<4; i++){
-             let info = data.data[i].artist.cover_big;     
-           img.innerHTML += `<img class="fotoalbum" src=${info}  alt="foto album"/>`
-      
-           }
-    
-
-  })
-      .catch(function(error){
-      console.log('Este es el error: ' + error);})
+let nombreAlbum = document.querySelector(".artista2");
+let artista = document.querySelector(".artista");
+let img = document.querySelector(".fotoalbum")
+let genero = document.querySelector(".genero");
+let canciones = document.querySelector(".canciones");
+let fecha = document.querySelector(".fecha");
 
 
-      
-      // 
-      
-     // let nombreAlbum = document.querySelector(".artista2");
-     
-     // let genero = document.querySelector(".genero");
-     // let canciones = document.querySelector(".listenalbum");
-     
-     
-      //nombreAlbum.innerText = info.artist.name
-      //artista.innerText = info.artist.
-     
+let url = (`https://api.allorigins.win/raw?url=https://api.deezer.com/album/${kevinId}`);
+
+fetch(url)
+  .then(function(response) {
+    return response.json()
+
+})
+  .then(function(data){
+   console.log(data);
+   artista.href = `detail-artist.html?id=${data.artist.id}`
+  artista.innerHTML = `<h1 > ${data.artist.name}</h1> `   
+  nombreAlbum.href = `detail-album.html?id=${data.id}`
+  nombreAlbum.innerHTML = `<h2 >${data.title}</h2>`  
+  img.src = data.cover_big
+  genero.innerText = data.genres.data[0].name
+  fecha.innerText = data.release_date
+  for (i=0; i<data.tracks.data.length; i++){
+    canciones.innerHTML += `<a href="detail-track.html?id=${data.tracks.data[i].id}" > ${i+1.} ${data.tracks.data[i].title} </a>`
+  }
+  
+
+
+})
+    .catch(function(error){
+    console.log('Este es el error: ' + error);})

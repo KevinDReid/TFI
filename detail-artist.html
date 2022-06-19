@@ -40,15 +40,10 @@
       </nav>
 
       <article class="all-search">
-        <section class="art-icon">
-          <span class="icon"
-            ><a href="search-results.html"><i class="fa fa-search"></i></a
-          ></span>
-        </section>
-
         <section class="search">
-          <form action="search-results.html">
-            <input type="search" id="search" placeholder="Search..." />
+          <form action="search-results.html" method="GET">
+            <input type="text" name="buscador" value="" />
+            <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </section>
       </article>
@@ -56,69 +51,15 @@
 
     <main class="main">
       <article class="all-artist">
-        <div class="artista"></div>
+        <h1 class="artista">NOMBRE</h1>
       </article>
       <article class="article2">
         <div class="artistdiv">
-          <img
-            height="500px"
-            src="./img/imagenescancion/daviddddd.jpeg"
-            alt="fotoguetta"
-          />
+          <img class="imgg" height="500px" src="" alt="foto del artista" />
         </div>
         <div class="lista">
-          <h3 class="h3top">Top 5 canciones</h3>
-          <ol class="ollista">
-            <li>
-              <p>
-                <a
-                  href="https://www.youtube.com/watch?v=NUVCQXMUVnI"
-                  target="_blank"
-                >
-                  Memories (feat. Sam Martin)</a
-                >
-              </p>
-            </li>
-            <li>
-              <p>
-                <a
-                  href="https://www.youtube.com/watch?v=BPiW0tkWfeg"
-                  target="_blank"
-                >
-                  Lovers on the Sun (feat. Sam Martin)</a
-                >
-              </p>
-            </li>
-            <li>
-              <p>
-                <a
-                  href="https://davidguetta.com/album/titanium-feat-sia-david-guetta-morten-future-rave-remix/"
-                  target="_blank"
-                >
-                  Titanium (feat.Sia)</a
-                >
-              </p>
-            </li>
-            <li>
-              <p>
-                <a
-                  href="https://www.youtube.com/watch?v=jUe8uoKdHao"
-                  target="_blank"
-                >
-                  Without you (feat.usher)</a
-                >
-              </p>
-            </li>
-            <li>
-              <p>
-                <a
-                  href="https://www.youtube.com/watch?v=EVr__5Addjw"
-                  target="_blank"
-                  >Dangerous (feat.Sam Martin)
-                </a>
-              </p>
-            </li>
-          </ol>
+          <h3 class="h3top">Top 5 discos</h3>
+          <ol class="ollista"></ol>
         </div>
       </article>
     </main>

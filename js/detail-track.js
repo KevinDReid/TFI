@@ -1,6 +1,6 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-queryStringObj.get('id');
+let id = queryStringObj.get('id');
 
 fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
     .then(function(response) {
@@ -8,20 +8,21 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
 })
     .then(function(data){
         console.log(data);
-        for(let i=0; i<1; i++){
             let albumCover = document.querySelector('.permanence')
-            let dataAlbum = data.data[i].album
-            let dataArtist = data.data[i].artist
-            let dataSong = data.data[i]
+            let dataAlbum = data.album
+            let dataArtist = data.artist
+            let dataSong = data
+
             let duration = dataSong.duration
             function time(duration){
             duration/60
             }
 
-            albumCover.innerHTML = `<img height="640" width="640" src="${dataAlbum.cover_big}" alt="${dataAlbum.title}">`
+
+            albumCover.innerHTML = `<img height="640" width="640" src="${dataAlbum.cover_xl}" alt="${dataAlbum.title}">`
 
             let trackInfo = document.querySelector ('.divimportante')
-            trackInfo.innerHTML = `<div class="img">
+            trackInfo.innerHTML = `<div class="arreglo-css">
             </div>
             <div class="texto1">
                 <h4 class="david"> ${dataArtist.name} / ${dataAlbum.title} </h4>
@@ -50,17 +51,43 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             <div class="div2">
                         <span class="span1"> Fecha de lanzamiento: </span> <span class="desc"> ${dataAlbum.release_date}</span>
                       </div>
-                      <div class="div3">
-                        <span class="span1"> Genero:  </span><span class="desc"> Electronica</span>
-                      </div>
-            <div class="div4">
-              <span class="span2"> <a href="playlist.html" class="arc" >Añadir a mi playlist</a> </span>
-            </div>
+                      <div class="div4">
+                      <span class="span2"> <a href="playlist.html" class="arc add" >Añadir a mi playlist</a> </span>
+                    </div>
             <div class="div5">
               <span class="span2"> <a href="playlist.html" class="arc" >Ver mi playlist</a> </span>
             </div>
           </div>`
+          let likedSongs = [];
+
+          let storageLikedSongs = localStorage.getItem('likedSongs')
+
+              if(storageLikedSongs){
+              let likedSongsArray = JSON.parse(storageLikedSongs)
+              likedSongs = likedSongsArray
+         } 
+              let add = document.querySelector(".add");
+              if(likedSongs.includes(id)){
+            add.innerText = "Sacar de mi playlist"
+} else {}
+        add.addEventListener('click', function(event) {
+        event.preventDefault()
+
+        if(likedSongs.includes(id)){
+        let chaucancion = likedSongs.indexOf(id)
+        likedSongs.splice(chaucancion, 1);
+        add.innerText = "Añadir a mi playlist"
+
+      } else {
+        likedSongs.push(id);
+        add.innerText = "Sacar de playlist"
+    }
+
+    let FavoritosToString = JSON.stringify(likedSongs);
+    localStorage.setItem('likedSongs', FavoritosToString)
+
         }
+      )
 })
     .catch(function(error){
     console.log('Este es el error: ' + error);})
