@@ -91,7 +91,7 @@ let playInp = document.querySelector('.playInp');
 let playSub = document.querySelector('.playSub');
 playSub.addEventListener('click', function(e) {
     e.preventDefault();
-    localStorage.setItem('playlistName', playInp.value);
+    localStorage.setItem('playlistName', JSON.stringify(playInp.value));
 })
-let removed = localStorage.getItem('playlistName').replace('""', '')
+let removed = localStorage.getItem('playlistName').replace(/"+/g, '')
 playInp.value = removed;
