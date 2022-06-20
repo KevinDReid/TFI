@@ -51,11 +51,7 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             <div class="div1">
               <span class="span1">Artistas:</span><span class="desc">${dataArtist.name}</span>
             </div>
-
-            <div class="div3">
-              <span class="span1"> Genero:  </span><span class="desc"> Electronica</span>
-            </div>
-
+            
             <div class="div2">
               <span class="span1"> Fecha de lanzamiento: </span> <span class="desc"> ${dataAlbum.release_date}</span>
             </div>
