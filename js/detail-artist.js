@@ -2,28 +2,30 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let kevinId = queryStringObj.get("id");
  
-let img = document.querySelector(".imgg")
+let imgArtistDiv = document.querySelector(".artistdiv")
 let nombreArtista= document.querySelector(".artista")
 let lista = document.querySelector(".ollista")
 
 
 
-
-fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${kevinId}`)//info de artista solo para nombre y foto
+//Nombre y foto del artista
+fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${kevinId}`)
     .then(function(response) {
         return response.json()
 })
     .then(function(data){
-        console.log(data);
-     nombreArtista.innerHTML = `<h1>${data.name}</h1>`
-     img.src = data.picture_big
+      console.log(data);
+      nombreArtista.innerHTML = `<a href="detail-artist.html?id=${data.id}">${data.name}</a>`
+      imgArtistDiv.innerHTML += `<img class="imgg" height="500px" src="${data.picture_big}" alt="foto del artista" />`
+      
 
 })
     .catch(function(error){
     console.log('Este es el error: ' + error);})
 
-        //otro fetch
- fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${kevinId}/albums`)
+// Albums
+
+    fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${kevinId}/albums`)
             .then(function(response) {
                 return response.json()
 })

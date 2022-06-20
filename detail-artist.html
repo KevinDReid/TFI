@@ -31,19 +31,17 @@
         <ul class="links">
           <li><a href="index.html">Home</a></li>
           <li><a href="genres.html">Géneros</a></li>
-          <li><a href="detail-genres.html">Detalles del género</a></li>
-          <li><a href="detail-artist.html">Artistas</a></li>
-          <li><a href="detail-album.html">Discos</a></li>
-          <li><a href="detail-track.html">Canciones</a></li>
           <li><a href="playlist.html">Favoritos</a></li>
         </ul>
       </nav>
 
       <article class="all-search">
         <section class="search">
-          <form action="search-results.html" method="GET">
+          <form action="search-results.html" method="GET" class="formIndex">
             <input type="text" name="buscador" value="" />
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button class="bSub" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
           </form>
         </section>
       </article>
@@ -51,12 +49,10 @@
 
     <main class="main">
       <article class="all-artist">
-        <h1 class="artista">NOMBRE</h1>
+        <h1 class="artista"></h1>
       </article>
       <article class="article2">
-        <div class="artistdiv">
-          <img class="imgg" height="500px" src="" alt="foto del artista" />
-        </div>
+        <div class="artistdiv"></div>
         <div class="lista">
           <h3 class="h3top">Top 5 discos</h3>
           <ol class="ollista"></ol>

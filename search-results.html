@@ -40,36 +40,31 @@
         <ul class="links">
           <li><a href="index.html">Home</a></li>
           <li><a href="genres.html">Géneros</a></li>
-          <li><a href="detail-genres.html">Detalles del género</a></li>
-          <li><a href="detail-artist.html">Artistas</a></li>
-          <li><a href="detail-album.html">Discos</a></li>
-          <li><a href="detail-track.html">Canciones</a></li>
           <li><a href="playlist.html">Favoritos</a></li>
         </ul>
       </nav>
 
       <article class="all-search">
-        
         <section class="search">
-          <form action="search-results.html" method="GET">
+          <form action="search-results.html" method="GET" class="formIndex">
             <input type="text" name="buscador" value="" />
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button class="bSub" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
           </form>
         </section>
       </article>
     </header>
-    <main>
+    <main class="mainResults">
       <section class="srborder">
-       <h2 class="srtext">CARGANDO</h2>
-       <img class="gif" src="./img/loading.gif" alt="gif">
+        <h2 class="srtext">CARGANDO</h2>
+        <img class="gif" src="./img/loading.gif" alt="gif" />
       </section>
-      <section class="articulos">
-
-
-     </section>
+      <section class="articulos"><ul class="srul"></ul></section>
       <article class="no-search-results">
-        <p> No se han encontrado más resultados de búsqueda.</p>
+        <p>No se han encontrado más resultados de búsqueda.</p>
       </article>
+    </main>
     <footer>
       <p class="slide">
         Integrantes:

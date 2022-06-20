@@ -17,12 +17,9 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=${busq
     else{
         tituloBusqueda.innerText = `Resultado de busqueda para: ${busqueda}`
     }
-let articulos = document.querySelector(".articulos")
-console.log(articulos)
-    for (let i=0;i<data.data.length;i++){
-  articulos.innerHTML += `<article>
-  <ul class="srul">
-    <li class="sub-list-sr">
+let srul = document.querySelector(".srul")
+for (let i=0;i<data.data.length;i++){
+  srul.innerHTML += `<li class="sub-list-sr">
       <a href="detail-track.html?id=${data.data[i].id}" class="sub-list-button-sr">
         <div class="content-container">
           <img
@@ -31,21 +28,17 @@ console.log(articulos)
           />
           <div class="list-text"> 
             <h3>${data.data[i].title}</h3>
-            </a>
-            <a href="detail-artist.html?id=${data.data[i].artist.id}" >
             <p>${data.data[i].artist.name}</p>
-            </a>
-          </div>
-        </div>
+            </div>
+            </div>
+          </a>
      
-    </li>
-  </ul>
-</article>`  
+    </li>`  
 }
 })
-.then(function(){
- let gif= document.querySelector(".gif")
- gif.style.display = "none"
-})
+  .then(function(){
+    let gif= document.querySelector(".gif")
+    gif.style.display = "none"
+    })
     .catch(function(error){
     console.log('Este es el error: ' + error);})

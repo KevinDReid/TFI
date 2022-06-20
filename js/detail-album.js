@@ -9,26 +9,23 @@ let genero = document.querySelector(".genero");
 let canciones = document.querySelector(".canciones");
 let fecha = document.querySelector(".fecha");
 
-
-let url = (`https://api.allorigins.win/raw?url=https://api.deezer.com/album/${kevinId}`);
-
-fetch(url)
+fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/album/${kevinId}`)
   .then(function(response) {
     return response.json()
 
 })
   .then(function(data){
-   console.log(data);
-   artista.href = `detail-artist.html?id=${data.artist.id}`
-  artista.innerHTML = `<h1 > ${data.artist.name}</h1> `   
-  nombreAlbum.href = `detail-album.html?id=${data.id}`
-  nombreAlbum.innerHTML = `<h2 >${data.title}</h2>`  
-  img.src = data.cover_big
-  genero.innerText = data.genres.data[0].name
-  fecha.innerText = data.release_date
-  for (i=0; i<data.tracks.data.length; i++){
-    canciones.innerHTML += `<a href="detail-track.html?id=${data.tracks.data[i].id}" > ${i+1.} ${data.tracks.data[i].title} </a>`
-  }
+    console.log(data);
+    artista.href = `detail-artist.html?id=${data.artist.id}`
+    artista.innerHTML = `<h1 class="artista"> ${data.artist.name}</h1> `   
+    nombreAlbum.href = `detail-album.html?id=${data.id}`
+    nombreAlbum.innerHTML = `<h2 class="albumName">${data.title}</h2>`  
+    img.src = data.cover_big
+    genero.innerText = data.genres.data[0].name
+    fecha.innerText = data.release_date
+    for (i=0; i<data.tracks.data.length; i++){
+      canciones.innerHTML += `<a href="detail-track.html?id=${data.tracks.data[i].id}" > ${i+1.} ${data.tracks.data[i].title} </a>`
+    }
   
 
 
