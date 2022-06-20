@@ -52,22 +52,21 @@ playlistSongs.innerHTML += `<li class="plsongs">
 <p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a> ${time()}</p>
 </div></li>`
 
-
 let like = document.querySelector(".fa-heart");
-if(likedSongs.includes(id)){
-    like.innerHTML = `<p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a>${time()}</p>`
+if(likedSongs.includes(data.id)){
+    like.innerHTML = `<p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a></p>`
 }
 document.querySelector(".fa-heart").addEventListener('click', function(event) {
     event.preventDefault()
 
-    if(likedSongs.includes(id)){
+    if(likedSongs.includes(data.id)){
         let chaucancion = likedSongs.indexOf(id)
         likedSongs.splice(chaucancion, 1);
-        like.innerHTML = `<p><a href="#"><i class="fa-regular fa-heart greenyellow"></i></a> ${time()}</p>`
+        like.innerHTML = `<p><a href="#"><i class="fa-regular fa-heart greenyellow"></i></a> </p>`
 
     } else {
-        likedSongs.push(id);
-        like.innerHTML = `<p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a> ${time()}</p>`
+        likedSongs.push(data.id);
+        like.innerHTML = `<p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a> </p>`
 
     }     
 
@@ -78,8 +77,17 @@ document.querySelector(".fa-heart").addEventListener('click', function(event) {
     console.log(localStorage.getItem("likedSongs"));
 });
 document.querySelector(".plsongs").addEventListener('mouseover', function(event) {
+    document.querySelector("h5").innerHTML = `<a class = "play" src="#"><i class="fa-solid fa-play"></i></a>`
+    document.querySelector(".play").addEventListener('click', function(event) {
+        let sound = new Audio(`https://widget.deezer.com/widget/dark/track/${id}`);
+        sound.currentTime = 0;
+        sound.play();
+    });
+
+});
+document.querySelector(".plsongs").addEventListener('mouseout', function(event) {
    
-    document.querySelector("h5").innerHTML = `<a src="${data.preview}"><i class="fa-solid fa-play"></i></a>`
+    document.querySelector("h5").innerHTML = `${[i+1]}`
 
 });
 })
