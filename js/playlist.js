@@ -53,9 +53,6 @@ playlistSongs.innerHTML += `<li class="plsongs">
 </div></li>`
 
 let like = document.querySelector(".fa-heart");
-if(likedSongs.includes(data.id)){
-    like.innerHTML = `<p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a></p>`
-}
 document.querySelector(".fa-heart").addEventListener('click', function(event) {
     event.preventDefault()
 
