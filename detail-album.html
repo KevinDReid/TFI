@@ -40,24 +40,18 @@
         <ul class="links">
           <li><a href="index.html">Home</a></li>
           <li><a href="genres.html">Géneros</a></li>
-          <li><a href="detail-genres.html">Detalles del género</a></li>
-          <li><a href="detail-artist.html">Artistas</a></li>
-          <li><a href="detail-album.html">Discos</a></li>
-          <li><a href="detail-track.html">Canciones</a></li>
           <li><a href="playlist.html">Favoritos</a></li>
         </ul>
       </nav>
 
+      
       <article class="all-search">
-        <section class="art-icon">
-          <span class="icon"
-            ><a href="search-results.html"><i class="fa fa-search"></i></a
-          ></span>
-        </section>
-
         <section class="search">
-          <form action="search-results.html">
-            <input type="search" id="search" placeholder="Search..." />
+          <form action="search-results.html" method="GET" class="formIndex">
+            <input type="text" name="buscador" value="" />
+            <button class="bSub" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
           </form>
         </section>
       </article>
@@ -65,43 +59,31 @@
 
     <main class="main1">
       <article class="all-artist">
-        <div class="artista">
-        <h1> DAVID GUETTA</h1>
+        <div >
+        <a class="artista" href=""> </a>
       </div>
-        <h2 class="artista2 listen">Listen</h2>
+       <a href="" class="artista2 listen" ></a> 
       </article>
       <div class="album">
         <img
           class="fotoalbum"
-          src="./img/imagenescancion/David-Guettaalbum.jpeg"
+          src=""
           alt="foto album"
         />
         <div class="divdisco">
           <ul class="datoscancion">
             <li>
               <span class="span1">Género: </span>
-              <span class="desc genero"> Electronica, Pop </span>
+              <span class="desc genero">  </span>
             </li>
             <br />
             <li>
-              <span class="span1">Estilo: </span>
-              <span class="desc estilo">Electro House, Dance-pop</span>
+              <span class="span1"> Año:</span> <span class="desc fecha"> </span>
             </li>
-            <br />
-            <li>
-              <span class="span1"> Año:</span> <span class="desc fecha"> 2014</span>
-            </li>
+            <li" class="canciones">
+          </li>
           </ul>
-          <iframe
-            class="listenalbum"
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/album/77UW17CZFyCaRLHdHeofZu?utm_source=generator"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
+          
         </div>
       </div>
     </main>
