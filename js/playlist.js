@@ -52,18 +52,19 @@ playlistSongs.innerHTML += `<li class="plsongs">
 <p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a> ${time()}</p>
 </div></li>`
 
+
 let like = document.querySelector(".fa-heart");
 document.querySelector(".fa-heart").addEventListener('click', function(event) {
     event.preventDefault()
 
-    if(likedSongs.includes(data.id)){
+    if(likedSongs.includes(id)){
         let chaucancion = likedSongs.indexOf(id)
         likedSongs.splice(chaucancion, 1);
-        like.innerHTML = `<p><a href="#"><i class="fa-regular fa-heart greenyellow"></i></a> </p>`
+        like.innerHTML = `<p><a href="#"><i class="fa-regular fa-heart greenyellow"></i></a> ${time()}</p>`
 
     } else {
-        likedSongs.push(data.id);
-        like.innerHTML = `<p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a> </p>`
+        likedSongs.push(id);
+        like.innerHTML = `<p><a href="#"><i class="fa-solid fa-heart greenyellow"></i></a> ${time()}</p>`
 
     }     
 
@@ -74,19 +75,20 @@ document.querySelector(".fa-heart").addEventListener('click', function(event) {
     console.log(localStorage.getItem("likedSongs"));
 });
 document.querySelector(".plsongs").addEventListener('mouseover', function(event) {
-    document.querySelector("h5").innerHTML = `<a class = "play" src="#"><i class="fa-solid fa-play"></i></a>`
-    document.querySelector(".play").addEventListener('click', function(event) {
-        let sound = new Audio(`https://widget.deezer.com/widget/dark/track/${id}`);
-        sound.currentTime = 0;
-        sound.play();
-    });
-
-});
-document.querySelector(".plsongs").addEventListener('mouseout', function(event) {
    
-    document.querySelector("h5").innerHTML = `${[i+1]}`
+    document.querySelector("h5").innerHTML = `<a src="${data.preview}"><i class="fa-solid fa-play"></i></a>`
 
 });
 })
     .catch(function(error){
     console.log('Este es el error: ' + error);})}
+
+// Nombre de la playlist
+let playInp = document.querySelector('.playInp');
+let playSub = document.querySelector('.playSub');
+playSub.addEventListener('click', function(e) {
+    e.preventDefault();
+    localStorage.setItem('playlistName', JSON.stringify(playInp.value));
+})
+let removed = localStorage.getItem('playlistName').replace(/"+/g, '')
+playInp.value = removed;

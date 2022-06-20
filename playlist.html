@@ -54,7 +54,19 @@
         <img class="plimg" src="./img/lofigirl.jpeg" alt="playlistimage" />
         <div class="yourpl">
           <p>TU LISTA DE REPRODUCCIÓN</p>
-          <h1 class="h1pl">Mi playlist #1</h1>
+          <form action="playlist.html" method="GET">
+            <input
+              type="text"
+              name="playlistName"
+              class="playInp"
+              placeholder="Mi playlist #1"
+              value=""
+              spellcheck="false"
+              autocomplete="off"
+            />
+            <button type="submit" class="playSub">Cambiar nombre</button>
+          </form>
+          <!-- <h1 class="h1pl">Mi playlist #1</h1> -->
         </div>
       </article>
       <article class="plinfo">
