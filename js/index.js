@@ -1,6 +1,22 @@
 let albumUl = document.querySelector('.list-albums');
 let sButton = document.querySelector('.sub-list-button');
 let trackUl = document.querySelector('.list-tracks');
+let busq = document.querySelector('.busq');
+let submit = document.querySelector('.bSub')
+// Buscador
+submit.addEventListener('click', function(e){
+    if (busq.value == '') {
+        e.preventDefault();
+
+        alert('No buscó nada.')
+    }
+    else if (busq.value.length < 3){
+        e.preventDefault();
+
+        alert('Introduzca 3 caracteres o más')
+    }
+})
+
 // Artists
 fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists')
     .then(function(response) {
