@@ -39,11 +39,11 @@ playlistSongs.innerHTML += `<li class="plsongs">
             clipboard-write"></iframe>
 <div class="songartist">
   <h4 class="white weight newsize bot"><a href="detail-track.html?id=${data.id}">${data.title}</a></h4>
-  <p class="top"><a class="top" href="detail-artist.html?id=${data.id}">${data.artist.name}</a></p>
+  <p class="top"><a class="top" href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a></p>
 </div>
 </div>
 <div class="plsize2">
-<p><a href="detail-album.html?id=${data.id}">${data.album.title}</a></p>
+<p><a href="detail-album.html?id=${data.album.id}">${data.album.title}</a></p>
 </div>
 <div class="plsize3">
 <p>${dateArray[i]}</p>
