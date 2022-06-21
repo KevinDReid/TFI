@@ -65,13 +65,22 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             </div>
           </div>`
           let likedSongs = [];
+          let storageDate = [];
 
+
+          let getDate = localStorage.getItem('storageDate')
           let storageLikedSongs = localStorage.getItem('likedSongs')
+          let today = new Date();
+          let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
           if(storageLikedSongs){
             let likedSongsArray = JSON.parse(storageLikedSongs)
             likedSongs = likedSongsArray
          } 
+         if(getDate){
+          let dateArray = JSON.parse(getDate)
+          storageDate = dateArray
+       } 
 
           let add = document.querySelector(".add");
 
@@ -87,14 +96,19 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
           if(likedSongs.includes(id)){
             let chaucancion = likedSongs.indexOf(id)
             likedSongs.splice(chaucancion, 1);
+            storageDate.splice(date, 1)
             add.innerText = "Añadir a mi playlist"
         } else {
           likedSongs.push(id);
+          storageDate.push(date);
           add.innerText = "Sacar de playlist"
     }
+    let dateToString = JSON.stringify(storageDate);
+    localStorage.setItem('storageDate', dateToString)
 
     let FavoritosToString = JSON.stringify(likedSongs);
     localStorage.setItem('likedSongs', FavoritosToString)
+
 
         }
       )
