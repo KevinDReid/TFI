@@ -32,14 +32,13 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             </div>`
 
             let artistName=document.querySelector('.arreglo-css');
-            artistName.innerHTML = `<h1 class="artista">${dataArtist.name}</h1>`;
+            artistName.innerHTML = `<h1 class="artista"><a href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a></h1>`;
 
             let fullTrackInfo=document.querySelector('.divaside');
 
             fullTrackInfo.innerHTML = `<div class="texto">
             <h3 class="span1">Canción</h3>
-            <span>${dataSong.track_position}.</span><span>${dataSong.title}</span>
-            <span class="tiempo">${time()}</span>
+            <span>${dataSong.track_position}. ${dataSong.title} ${time()}</span>
 
             <span class="triangulo"><iframe title="deezer-widget"src="https://widget.deezer.com/widget/dark/track/${id}"width="80%"height="300"
             frameborder="0"allowtransparency="true"allow="encrypted-media;
@@ -49,7 +48,11 @@ fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`)
             <h3 class="span1">Acerca del álbum</h3>
 
             <div class="div1">
-              <span class="span1">Artistas:</span><span class="desc">${dataArtist.name}</span>
+            <span class="span1">Título: </span><span class="desc"><a href="detail-album.html?id=${data.album.id}">${data.album.title}</a></span>
+            </div>
+
+            <div class="div1">
+              <span class="span1">Artistas: </span><span class="desc"><a href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a></span>
             </div>
             
             <div class="div2">

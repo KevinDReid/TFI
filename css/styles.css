@@ -491,6 +491,10 @@ margin-bottom: 10px;
   font-size: 15px;
   color: lightslategray;
 }
+.texto {
+  display: flex;
+  flex-direction: column;
+}
 .david{
   display: flex;
   justify-content: flex-end;

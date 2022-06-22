@@ -49,7 +49,7 @@ playlistSongs.innerHTML += `<li class="plsongs">
 <p>${dateArray[i]}</p>
 </div>
 <div class="plsize4">
-<p class="change"><a href="#" class="heart"><i class="fa-solid fa-heart greenyellow"></i></a> ${time()}</p>
+<p><a href="#" class="heart"><i class="fa-solid fa-heart greenyellow"></i></a> ${time()}</p>
 </div></li>`
 
 })
