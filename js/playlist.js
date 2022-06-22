@@ -6,6 +6,21 @@ let likedSongsArray = JSON.parse(storageLikedSongs)
 let likedSongs = [];
 let getDate = localStorage.getItem('storageDate')
 let dateArray = JSON.parse(getDate)
+let busq = document.querySelector('.busq');
+let submit = document.querySelector('.bSub')
+// Buscador
+submit.addEventListener('click', function(e){
+    if (busq.value == '') {
+        e.preventDefault();
+
+        alert('No buscó nada.')
+    }
+    else if (busq.value.length < 3){
+        e.preventDefault();
+
+        alert('Introduzca 3 caracteres o más')
+    }
+})
 
 for (let i=0; i<likedSongsArray.length; i++){
 fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${likedSongsArray[i]}`)

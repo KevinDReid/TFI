@@ -1,6 +1,22 @@
 let albumUl = document.querySelector('.list-albums');
 let sButton = document.querySelector('.sub-list-button');
 let trackUl = document.querySelector('.list-tracks');
+let busq = document.querySelector('.busq');
+let submit = document.querySelector('.bSub')
+// Buscador
+submit.addEventListener('click', function(e){
+    if (busq.value == '') {
+        e.preventDefault();
+
+        alert('No buscó nada.')
+    }
+    else if (busq.value.length < 3){
+        e.preventDefault();
+
+        alert('Introduzca 3 caracteres o más')
+    }
+})
+
 // Artists
 fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists')
     .then(function(response) {
@@ -40,11 +56,13 @@ fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks'
         return response.json()
 })
 .then(function(data){
+    console.log(data);
     for(let i=0; i<5; i++) {
         let pic = data.data[i].album.cover;
         let name = data.data[i].title;
         let datId = data.data[i].id;
-        trackUl.innerHTML += `<li class="sub-list"><a href="detail-track.html?id=${datId}" class="sub-list-button"><div class="content-container"><img src="${pic}" alt="artist"> <div class="list-text"><h3>${name}</h3></div></div></a></li>`
+        let datArt = data.data[i].artist.name
+        trackUl.innerHTML += `<li class="sub-list"><a href="detail-track.html?id=${datId}" class="sub-list-button"><div class="content-container"><img src="${pic}" alt="artist"> <div class="list-text"><h3>${name}</h3><p>${datArt}</p></div></div></a></li>`
     }
 })
 
